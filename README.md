@@ -1,6 +1,6 @@
-# Algo-Phantoms
+# CS wala
 
-<img src="https://i.ibb.co/3Sv9dNF/frontend-final.png" alt="frontend final.png" width="1080" />
+
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) 
@@ -8,18 +8,18 @@
 ![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square) 
 ![Maintenance](https://img.shields.io/maintenance/yes/2021)
 
-![GitHub forks](https://img.shields.io/github/forks/Algo-Phantoms/Algo-Phantoms-Frontend?style=social) 
-![GitHub Repo stars](https://img.shields.io/github/stars/Algo-Phantoms/Algo-Phantoms-Frontend?style=social)
+![GitHub forks]https://github.com/CSwala/CSwala-website?style=social) 
+![GitHub Repo stars](https://github.com/CSwala/CSwala-website?style=social)
 
-**💻 Algo-Phantoms-Frontend is a Website that provides pathways and quizzes along with a code editor to help you towards your DSA journey.📰🔥**.
+**💻 An Open Source organization to Educate people about the right style of getting educated!.📰🔥**.
 
 ## 🔥 Features
 
-📰 Write and edit your code in the website.
+📰 Get Latest Updates about Everything there exits in Computer Science
 
-✨ Play quizzes to improve your DSA fundamentals.
+✨ Search in a Dictionary Style manner.
 
-🚀 Give your DSA journey a proper guide using pathways in the website.
+🚀 Get Ahead with the right guidance from the Community.
 
 ## 🛠 Tech Used
 - HTML
@@ -34,22 +34,20 @@
 * If you want to contribute, we prefer that you create an issue before making a PR and link your PR to that issue.
 * If you have modified/added code work, make sure the code compiles before submitting.
 * Strictly use snake_case (underscore_separated) in your file_name and push it in correct folder.
-* Do not update the **[README.md](https://github.com/Algo-Phantoms/Algo-Phantoms-Frontend/blob/master/README.md).**
+* Do not update the **[README.md](https://github.com/CSwala/CSwala-website/blob/main/README.md).**
 
 ## 😎Maintainers
 <table>
   <tbody><tr>
-    <td align="center"><a href="https://github.com/todi-2000"><img alt="" src="https://avatars.githubusercontent.com/todi-2000" width="100px;"><br><sub><b> Mansi Todi </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Phantoms-Frontend/commits?author=todi-2000" title="Code">💻 </a></td> </a></td>
-    <td align="center"><a href="https://github.com/diyajaiswal11"><img alt="" src="https://avatars.githubusercontent.com/diyajaiswal11" width="100px;"><br><sub><b>
- Diya Jaiswal </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Phantoms-Frontend/commits?author=diyajaiswal11" title="Code">💻 </a></td></a></td>
- <td align="center"><a href="https://github.com/Shruti3004"><img alt="" src="https://avatars.githubusercontent.com/Shruti3004" width="100px;"><br><sub><b> Shruti Agarwal </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Phantoms-Frontend/commits?author=Shruti3004" title="Code">💻 </a></td></a></td>
-     <td align="center"><a href="https://github.com/rudrakshi99"><img alt="" src="https://avatars.githubusercontent.com/rudrakshi99" width="100px;"><br><sub><b> Rudrakshi </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Phantoms-Frontend/commits?author=rudrakshi99" title="Code">💻 </a></td> </a></td>
+    <td align="center"><a href="https://github.com/riturajjain2000"><img alt="" src="https://avatars.githubusercontent.com/riturajjain2000" width="100px;"><br><sub><b> Rituraj Jain </b></sub></a><br><a href="https://github.com/CSwala/CSwala-website/commits?author=riturajjain2000" title="Code">💻 </a></td> </a></td>
+        <td align="center"><a href="https://github.com/5tupidbrain"><img alt="" src="https://avatars.githubusercontent.com/5tupidbrain" width="100px;"><br><sub><b> Saransh Harda </b></sub></a><br><a href="https://github.com/CSwala/CSwala-website/commits?author=5tupidbrain" title="Code">💻 </a></td> </a></td>
+    
   </tr>
 </tbody></table>
 
 ## Code Of Conduct:
 
-You can find our Code of Conduct [here](https://github.com/Algo-Phantoms/Algo-Phantoms-Frontend/blob/master/CODE_OF_CONDUCT.md).
+You can find our Code of Conduct [here](https://github.com/CSwala/CSwala-website/blob/main/CODE_OF_CONDUCT.md).
 
 ## License 📝 
 
