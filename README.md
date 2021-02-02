@@ -8,8 +8,8 @@
 ![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square) 
 ![Maintenance](https://img.shields.io/maintenance/yes/2021)
 
-![GitHub forks](https://img.shields.io/github/forks/CSwala/CSwala-website?style=social) 
-![GitHub Repo stars](https://img.shields.io/github/forks/CSwala/CSwala-website?style=social)
+![GitHub forks](https://img.shields.io/github/forks/CSwala/CSwala-website) 
+![GitHub Repo stars](https://img.shields.io/github/forks/CSwala/CSwala-website)
 
 **💻 An Open Source organization to Educate people about the right style of getting educated!.📰🔥**.
 
