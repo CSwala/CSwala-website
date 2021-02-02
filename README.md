@@ -9,7 +9,7 @@
 ![Maintenance](https://img.shields.io/maintenance/yes/2021)
 
 ![GitHub forks](https://img.shields.io/github/forks/CSwala/CSwala-website) 
-![GitHub Repo stars](https://img.shields.io/github/forks/CSwala/CSwala-website)
+![GitHub Repo stars](https://img.shields.io/github/stars/CSwala/CSwala-website)
 
 **💻 An Open Source organization to Educate people about the right style of getting educated!.📰🔥**.
 
