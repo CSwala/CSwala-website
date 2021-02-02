@@ -3,6 +3,12 @@
 
 ![GitHub forks](https://img.shields.io/github/forks/CSwala/CSwala-website) 
 ![GitHub Repo stars](https://img.shields.io/github/stars/CSwala/CSwala-website)
+<br>
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
+![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square) 
+![Maintenance](https://img.shields.io/maintenance/yes/2021)
 
 ## 🔥 Features
 
@@ -27,13 +33,7 @@
 
 
 ## Contribution Guidelines ⚙️
-
-* Make sure you do not copy codes from external sources because that work will not be considered. Plagiarism is strictly not allowed.
-* You can only work on issues that you have been assigned to you.
-* If you want to contribute, we prefer that you create an issue before making a PR and link your PR to that issue.
-* If you have modified/added code work, make sure the code compiles before submitting.
-* Strictly use snake_case (underscore_separated) in your file_name and push it in correct folder.
-* Do not update the **[README.md](https://github.com/CSwala/CSwala-website/blob/main/README.md).**
+You can find our Contributing guidelines [here](https://github.com/CSwala/CSwala-website/blob/main/CONTRIBUTING.md).
 
 ## 😎Maintainers
 <table>
@@ -53,11 +53,7 @@ You can find our Code of Conduct [here](https://github.com/CSwala/CSwala-website
 This project follows the [MIT License](https://choosealicense.com/licenses/mit/).
 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
-[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
-![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square) 
-![Maintenance](https://img.shields.io/maintenance/yes/2021)
+
 <br>
 <br>
 <h2 align="center">Made with ❤ by CS wala</h2>
@@ -65,4 +61,4 @@ This project follows the [MIT License](https://choosealicense.com/licenses/mit/)
 <br>
 <br> 
 
-## If you liked the project don't forget to star 🌟 and fork 🍽 the project.
+## If you liked the project don't forget to 🌟 and 🍽 the project.
