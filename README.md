@@ -1,4 +1,5 @@
-# CS wala
+
+# 💻 An Open Source organization to Educate people about the right style of getting educated!.📰🔥.
 
 ![GitHub forks](https://img.shields.io/github/forks/CSwala/CSwala-website) 
 ![GitHub Repo stars](https://img.shields.io/github/stars/CSwala/CSwala-website)
@@ -23,7 +24,6 @@
 [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
-**💻 An Open Source organization to Educate people about the right style of getting educated!.📰🔥**.
 
 
 ## Contribution Guidelines ⚙️
