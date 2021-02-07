@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 body {
-    font-family: "Poppins", sans-serif !important;
+    font-family: "Press Start 2P", cursive !important;
     overflow-x: hidden;
 }
 
@@ -32,12 +32,12 @@ header {
 }
 
 .navbar-nav a {
-    font-size: 18px;
+    font-size: 12px;
     font-weight: bold;
 }
 
 .nav-col {
-    background-color: #0e2431;
+    background-color: #0d1117;
     opacity: 0.8;
 }
 
@@ -46,9 +46,14 @@ header {
     font-weight: bold;
 }
 
+.footerr {
+    color: #F44236;
+    font-weight: bold;
+}
+
 .brand1 {
-    color: #3caea3;
-    font-size: 28px;
+    color: #FBC103;
+    font-size: 22px;
     padding-right: 0.5rem;
 }
 
@@ -75,7 +80,7 @@ header {
 }
 
 .nav-items:hover {
-    color: #3caea3 !important;
+    color: #FBC103 !important;
 }
 
 .banner-text {
@@ -86,17 +91,17 @@ header {
 
 .banner-text .main-head {
     color: #fff;
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 0;
 }
 
 .banner-text .main-head span {
-    color: #3caea3;
+    color: #FBC103;
 }
 
 .banner-text p {
-    color: #b8d5cd;
-    font-size: 30px;
+    color: #F44236;
+    font-size: 24px;
     margin: 0;
     font-weight: bold;
 }
@@ -107,14 +112,14 @@ header {
     bottom: 5vh;
     display: block;
     text-align: center;
-    font-size: 30px;
+    font-size: 24px;
     z-index: 100;
     text-decoration: none;
     text-shadow: 0;
     width: 35px;
     height: 35px;
-    border-bottom: 2px solid #3caea3;
-    border-right: 2px solid #3caea3;
+    border-bottom: 2px solid #FBC103;
+    border-right: 2px solid #FBC103;
     z-index: 9;
     -webkit-transform: translate(-50%, 0%) rotate(45deg);
     -moz-transform: translate(-50%, 0%) rotate(45deg);
@@ -177,20 +182,20 @@ header {
 }
 
 .about h1 {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(16px);
 }
 
 hr {
-    border: 1px solid #3caea3;
+    border: 1px solid #FBC103;
     display: block;
-    width: 80px;
+    width: 70px;
     margin: auto;
 }
 
 .about p {
-    font-size: 23px;
+    font-size: 18px;
 }
 
 .about-content {
@@ -221,25 +226,27 @@ hr {
 
 .round-1 {
     position: absolute;
-    top: 10%;
-    left: 10%;
-    width: 14rem;
-    height: 14rem;
+    top: 80%;
+    left: 18%;
+    width: 19rem;
+    height: 19rem;
     border-radius: 50%;
-    box-shadow: 0 0 40px #3caea3;
-    background: linear-gradient(-180deg, #22ffed, #49b1ad);
+    box-shadow: 0 0 40px #F44236;
+    background: linear-gradient(-180deg, #FBC103, #F44236);
 }
 
 .round-2 {
     position: absolute;
-    top: 50%;
-    right: 4%;
-    width: 20rem;
-    height: 20rem;
+    top: 40%;
+    left: 89%;
+    width: 45rem;
+    height: 45rem;
     border-radius: 50%;
-    box-shadow: 0 0 50px #5622ff;
-    background: linear-gradient(-180deg, #5622ff, #49b1ad);
+    box-shadow: 0 0 40px #F44236;
+    background: linear-gradient(-180deg, #FBC103, #F44236);
 }
+
+
 
 .box {
     width: 350px;
@@ -256,10 +263,10 @@ hr {
     background: #ffffff1a;
     padding: 1.5rem;
     border-radius: 25px;
-    box-shadow: 0 0 20px #3caea3;
+    box-shadow: 0 0 16px #0d1127;
     border: 2px solid #0000002a;
     text-align: center;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(16px);
     margin-bottom: 50px !important;
     margin-top: 40px !important;
 }
@@ -289,12 +296,12 @@ hr {
 }
 
 .custom-size {
-    font-size: 30px;
+    font-size: 18px;
 }
 
 .box p {
     color: #ffffff90;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .socials {
@@ -303,7 +310,7 @@ hr {
 
 .socials i {
     margin: 0 10px;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .socials a {
@@ -319,16 +326,16 @@ hr {
 }
 
 .fas-email {
-    font-size: 300%;
+    font-size: 100%;
 }
 
 .e-add {
-    font-size: 200%;
+    font-size: 100%;
 }
 
 #footer {
     padding: 100px 0px 40px 0px;
-    background-image: linear-gradient(130deg, #05272e 40%, #183a36 100%);
+    background-image: linear-gradient(135deg, #0d1117 10%, #0d1127 100%);
     /* background-image:linear-gradient(130deg, #ffa159 10%, #ff39b4 51%, #ffa159 100%);    */
 }
 
@@ -338,7 +345,7 @@ hr {
 }
 
 .subscribe-button {
-    background: #3caea3 !important;
+    background: #FBC103 !important;
 }
 
 .copyright-text {
@@ -385,7 +392,7 @@ hr {
 @media (min-width: 460px) and (max-width: 574px) {
     .about {
         height: 900px;
-        padding: 0 20px;
+        padding: 0 16px;
     }
 }
 
@@ -394,16 +401,16 @@ hr {
         height: 70vh;
     }
     .navbar-light .navbar-brand {
-        font-size: 20px;
+        font-size: 16px;
     }
     .banner-text p {
-        font-size: 20px;
+        font-size: 16px;
     }
     .banner-text .main-head {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .about p {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
@@ -425,11 +432,11 @@ hr {
         display: none;
     }
     .box {
-        margin-bottom: 20px;
+        margin-bottom: 16px;
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 716px) {
     .wrapper {
         max-width: 700px;
         flex-direction: column;
