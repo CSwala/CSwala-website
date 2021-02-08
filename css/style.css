@@ -292,11 +292,16 @@ hr {
 .box h2 {
     color: #ffffff60;
     text-transform: uppercase;
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
 .custom-size {
     font-size: 18px;
+}
+
+.custom-size1 {
+    font-size: 12px;
+    color: #ffffff40;
 }
 
 .box p {
@@ -305,12 +310,12 @@ hr {
 }
 
 .socials {
-    margin-top: 35px;
+    margin-top: 25px;
 }
 
 .socials i {
     margin: 0 10px;
-    font-size: 22px;
+    font-size: 28px;
 }
 
 .socials a {
