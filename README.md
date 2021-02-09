@@ -1,6 +1,8 @@
 
 # 💻 An Open Source organization to Educate people about the right style of getting educated!.📰🔥.
 
+<img src="https://emoji.discord.st/emojis/DiscordLuv.gif">Join the Discord Server [here](https://discord.gg/rAz3Eb8fsN)
+
 ![GitHub forks](https://img.shields.io/github/forks/CSwala/CSwala-website) 
 ![GitHub Repo stars](https://img.shields.io/github/stars/CSwala/CSwala-website)
 <br>
@@ -9,6 +11,8 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
 ![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square) 
 ![Maintenance](https://img.shields.io/maintenance/yes/2021)
+
+
 
 ## 🔥 Features
 
