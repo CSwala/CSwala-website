@@ -1,26 +1,38 @@
-# Contribution Guildelines
+# Contributing Guildelines
 
-## Please follow these steps if you wish to contribute to CSwala Website:
+### 👍🎉 First off, welcome to the project and thanks for taking the time to contribute! 🎉👍
+<br>
 
-### Star the Repo!
+#### When contributing to this repository, please first discuss the change you wish to make before making a change.
+<br>
 
-1. Go through the Issues to see if, what you want is already in discussion.
+## Before Getting Started!
+Learn how to fork a repo, create an issue, make changes, create pull request.
 
-2. Open a new Issue if you do not find the name you are looking for. Describe the feature request,additions you might want or anything clearly in the Issue message.
+For more information, refer to <a href = "https://docs.github.com/en" target = "_self">GitHub Documentation</a>
 
-3. Mention in the Issue that you want to work on it.
+--------
+## Contributing Process
+1. Go through 'Issues' to ensure whether the said issue has already been raised.
 
-4. Wait for the approval from the Maintainers of this project before startig to work on it.
+2. If you do find a new issue, do not hesitate to open a new one. Make sure to describe any additions required in the message.
 
-5. Donot make changes to the main branch , else make a develop branch and commit changes there.
+3. If interested, do mention in the issue that you want to work on it.
 
-6. Make sure you code is properly formatted and does not contain any commented out code.
+4. Kindly wait for the approval from the maintainers of this project before starting to work on any issue.
 
-7. Create a pull request after making the changes and mention the Issue number that your pull request is related to.
+5. **Do not make changes to the main branch.** All the changes should be made to the develop branch.
 
-8. Make the required changes if the reviewer asks for them. 
+6. Make sure that your code is properly formatted and does not contain any commented out code.
 
-9. That's it! Your pull request will be merged once everything seems okay.
+7. Create a pull request after making the required changes and do mention the issue number that your pull request is related to.
 
+8. Finally, wait for it to be reviewed. Make the required changes if the reviewer asks for them. 
 
+9. Your pull request will be merged once everything seems okay.
 
+10. That's it! You have successfully made your contribution to the project.
+<br>
+
+-----------------
+#### **Note**: Always comment and provide apt descriptions wherever necessary for efficient running of the project.
