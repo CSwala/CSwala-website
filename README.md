@@ -58,7 +58,19 @@ You can find our Code of Conduct [here](https://github.com/CSwala/CSwala-website
 
 This project follows the [MIT License](https://choosealicense.com/licenses/mit/).
 
+<h2>Contributors:</h2>
 
+### Applause goes to these wonderful people ✨
+
+<table>
+ <tr>
+  <td>
+   <a href="https://github.com/CSwala/CSwala-website/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=CSwala/CSwala-website" />
+   </a>
+  </td>
+ </tr>
+</table>
 
 <br>
 <br>
