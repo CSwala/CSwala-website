@@ -1,0 +1,15 @@
+@use "./../../scss/colors";
+
+@import "https://fonts.googleapis.com/css?family=Amatic+SC:400,700";
+
+.root {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 100px;
+  color: colors.$prussian-blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 0px;
+}
