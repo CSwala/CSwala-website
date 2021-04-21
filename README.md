@@ -1,4 +1,3 @@
-	
 # 💻 An Open Source organization to Educate people about the right style of getting educated!.📰🔥.
 
 <img src="https://emoji.discord.st/emojis/DiscordLuv.gif" height="30" width="30">  Join the Discord Server [here](https://discord.gg/rAz3Eb8fsN)
@@ -24,19 +23,68 @@
 
 🚀 Get Ahead with the right guidance from the Community.
 
-## 🛠 Tech Used
-- HTML
-- CSS
-- Bootstrap
-- Javascript
+### LivePreview
+ https://cswala-web.vercel.app/
+<br>
+<br>
+## Directory Structure
+```
+./src
+  ├── assets		#Any assets(img/css/fonts) that are imported into your components.
+  │   ├── img 
+  │   │   └── ...
+  │   ├── css
+  │   │   └── ...
+  │   ├── fonts
+  │   │   └── ...
+  ├── components	#All the components of the projects that are not the main views.
+  │   ├── NavBar.vue
+  │   ├── Footer.vue
+  │   ├── LinkPreview.vue
+  │   ├── VCard.vue
+  ├── mixins (js)	#Parts of javascript code that is reused in different components.
+  │   └── ...
+  ├── router		#All the routes of the website.
+  │   └── index.js
+  ├── views		#All the views of different pages.
+  │   ├── User
+  │   │   ├─ Login.vue
+  │   │   ├─ Register.vue
+  │   │   ├─ EditProfile.vue 
+  │   ├── HomePage.vue
+  │   ├── ExplorePage.vue
+  │   ├── HackFeed.vue
+  │   ├── JobHuntPage.vue
+  │   ├── 404.vue
+  ├── App.vue
+  ├── main.js
+```
 
-[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
+## Setup
 
+Get the code by either cloning this repository using git
+
+    > git clone https://github.com/5tupidbrain/cswala-web/
+
+... or downloading source code code as a zip archive.
+
+Once downloaded, open the terminal in the project directory, and continue with:
+
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+Visit in browser: http://localhost:8080
+
+### Compiles and minifies for production
+```
+npm run build
+```
 
 ## Contribution Guidelines ⚙️
 You can find our Contributing guidelines [here](https://github.com/CSwala/CSwala-website/blob/main/CONTRIBUTING.md).
@@ -58,19 +106,7 @@ You can find our Code of Conduct [here](https://github.com/CSwala/CSwala-website
 
 This project follows the [MIT License](https://choosealicense.com/licenses/mit/).
 
-<h2>Contributors:</h2>
 
-### Applause goes to these wonderful people ✨
-
-<table>
- <tr>
-  <td>
-   <a href="https://github.com/CSwala/CSwala-website/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=CSwala/CSwala-website" />
-   </a>
-  </td>
- </tr>
-</table>
 
 <br>
 <br>
