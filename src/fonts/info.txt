@@ -1,0 +1,3 @@
+add fonts in this folder
+
+after adding a font here.. delete this file (info.txt)

@@ -9,6 +9,8 @@
 ## Before Getting Started!
 Learn how to fork a repo, create an issue, make changes, create pull request.
 
+Learn about the File structure we use [here](/FILE_STRUCTURE.md)
+
 For more information, refer to <a href = "https://docs.github.com/en" target = "_self">GitHub Documentation</a>
 
 --------
