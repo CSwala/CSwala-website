@@ -1,5 +1,150 @@
 @use './../../scss/colors';
 
 .footer {
-  background: colors.$navy-blue;
+  position: relative;
+  margin-top: 2rem;
+  background-image: url("./../../assets/footer/bg2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .topShape {
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+
+    svg {
+      display: block;
+      width: calc(100% + 1.3px);
+      position: relative;
+      left: 50%;
+      -webkit-transform: translateX(-50%) rotateY(180deg);
+      -ms-transform: translateX(-50%) rotateY(180deg);
+      transform: translateX(-50%) rotateY(180deg);
+      overflow: hidden;
+
+      .svgPath {
+        fill: colors.$white;
+        -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+      }
+    }
+  }
+  .tint {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: colors.$black-thick-tint;
+  }
+  .row1 {
+    color: colors.$white;
+    position: relative;
+    margin: 50px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .col1 {
+      display: grid;
+      justify-content: center;
+      margin-left: 15px;
+      width: 200px;
+      font-family: "Roboto Mono", monospace;
+      transform: translateY(-14px);
+      @media (max-width: 660px) {
+        width: 100%;
+      }
+      .top {
+        display: flex;
+        align-items: flex-end;
+        gap: 10px;
+        font-size: 1.7rem;
+        .logo {
+          width: 50px;
+        }
+        p {
+          margin-bottom: 5px;
+        }
+      }
+      a {
+        color: colors.$white;
+        text-decoration: none;
+        margin-bottom: 18px;
+        font-size: 13px;
+        &:hover {
+          color: colors.$primaryLight;
+        }
+      }
+      .socialDiv {
+        display: flex;
+        gap: 10px;
+        .discordIcon {
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+    .subColumn {
+      display: grid;
+      justify-content: flex-start;
+      height: 110px;
+      min-width: 170px;
+      .head {
+        font-size: 1.3rem;
+      }
+      .category {
+        font-family: "Roboto Mono", monospace;
+        font-size: 15px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        & > * {
+          cursor: pointer;
+          margin-bottom: 3px;
+          text-decoration: none;
+          color: colors.$white;
+          display: block;
+          &:hover {
+            color: colors.$primaryLight;
+          }
+        }
+      }
+    }
+  }
+
+  .row2 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 15px;
+    gap: 7px;
+    .footerText {
+      text-align: center;
+      color: colors.$white;
+      width: 30%;
+      min-width: 256px;
+      font-weight: 200;
+      font-size: 0.9rem;
+      a {
+        text-decoration: none;
+        color: colors.$white;
+        &:hover {
+          color: colors.$primary;
+        }
+      }
+    }
+  }
 }

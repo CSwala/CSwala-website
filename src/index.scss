@@ -1,9 +1,8 @@
 @use './scss/colors';
 
-// @font-face {
-//   font-family: some-font;
-//   src: url(./fonts/some-font.ttf);
-// }
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;600&display=swap");
 
 * {
   margin: 0;
@@ -20,6 +19,6 @@ html {
 }
 
 body {
-  // font-family: some-font;
+  font-family: "Open Sans", sans-serif;
   background-color: colors.$white;
 }
