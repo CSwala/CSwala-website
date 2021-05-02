@@ -1,6 +1,9 @@
 @use './../../scss/colors';
 
-// @media (min-width: 767px) {
+.spacer {
+  height: 90px;
+}
+
 .header {
   background-color: colors.$backgroundLight;
   font-family: "Roboto Mono", monospace;
@@ -11,6 +14,9 @@
   padding: 15px 15px 15px 30px;
   gap: 15px;
   font-size: 14px;
+  .mobileLogo {
+    display: none;
+  }
   .list {
     display: flex;
     align-items: center;
@@ -106,6 +112,8 @@
       color: colors.$white;
       padding: 10px 15px;
       border-radius: 100px;
+      min-width: 95px;
+      transform: translateX(-10px);
       &::after {
         display: none;
       }
@@ -120,7 +128,7 @@
       height: 30px;
       position: relative;
       .dropDown {
-        z-index: 1;
+        z-index: 2;
         position: absolute;
         top: 36px;
         right: 0;
@@ -150,4 +158,137 @@
     }
   }
 }
-// }
+
+@media (max-width: 767px) {
+  .header {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    z-index: 999;
+    align-items: flex-start;
+    padding-top: 25px;
+    transition: all 0.7s cubic-bezier(0.9, 0.9, 0.33, 1);
+    .mobileLogo {
+      display: block;
+      position: fixed;
+      top: 20px;
+      transform: translateX(-50%);
+      left: 50%;
+      z-index: 2;
+      &:hover {
+        transform: scale(1.1) translateX(-45%);
+      }
+      .logo {
+        width: 50px;
+      }
+    }
+    .hamburger {
+      width: 30px;
+      height: 40px;
+      display: block;
+      cursor: pointer;
+      transition: all 0.1s cubic-bezier(0.9, 0.9, 0.33, 1);
+      box-sizing: content-box;
+      border-radius: 0 0 50px 0;
+      position: fixed;
+      top: 24px;
+      left: 37px;
+      z-index: 4;
+      .bar {
+        height: 3px;
+        background: colors.$white;
+        display: block;
+        position: absolute;
+        transform: rotate(0);
+        transition: all 1.5s cubic-bezier(0.9, 0, 0.33, 1);
+      }
+      .topBar {
+        width: 30px;
+        top: 30%;
+      }
+      .middleBar {
+        width: 30px;
+        top: 50%;
+      }
+      .bottomBar {
+        width: 22px;
+        top: 70%;
+        left: 0;
+      }
+    }
+
+    .left {
+      align-self: center;
+      flex-direction: column;
+      margin-bottom: 8rem;
+      width: 82%;
+      transform: translateX(-40px);
+      .homeContainer {
+        .home {
+          transform: scale(1.1);
+          &:hover {
+            transform: scale(1.4);
+          }
+        }
+      }
+      .pageLinks {
+        display: grid;
+        margin-left: 115px;
+        opacity: 0;
+        .li {
+          justify-content: flex-start;
+          font-size: 2rem;
+          &::after {
+            bottom: 0px;
+          }
+          &:hover::after {
+            left: 2px;
+            width: 18px;
+            bottom: 0px;
+          }
+        }
+      }
+      .activeLi {
+        &::after {
+          left: 2px;
+          width: 18px;
+        }
+      }
+    }
+    .right {
+      position: absolute;
+      top: 24px;
+      right: 10px;
+    }
+  }
+  .headerOpen {
+    height: 100vh;
+    transition: all 0.7s cubic-bezier(0.9, 0.9, 0.33, 1);
+    .mobileLogo {
+      transform: translate(-50%, -500px);
+    }
+    .hamburger {
+      width: 30px;
+      height: 40px;
+      transition: all 0.1s cubic-bezier(0.9, 0.9, 0.33, 1);
+      .bar {
+        top: 50%;
+        width: 30px;
+      }
+      .topBar {
+        transform: rotate(405deg);
+      }
+      .middleBar {
+        transform: rotateY(-90deg);
+      }
+      .bottomBar {
+        transform: rotate(135deg);
+      }
+    }
+    .left {
+      .pageLinks {
+        opacity: 1;
+      }
+    }
+  }
+}
