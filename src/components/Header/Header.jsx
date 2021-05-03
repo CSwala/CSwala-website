@@ -3,7 +3,15 @@ import { Link } from "react-router-dom";
 import styles from "./header.module.scss";
 import Logo from "./../../assets/_logo/logo.png";
 import { AccountCircle, Add, ExitToApp, Settings } from "@material-ui/icons";
-import { IconButton, makeStyles, Card, CardContent, Button, Typography } from "@material-ui/core";
+import {
+  IconButton,
+  makeStyles,
+  Button,
+  Typography,
+  ListItem,
+  List,
+  Divider,
+} from "@material-ui/core";
 
 function Header(props) {
   const { currentRoute } = props;
@@ -25,6 +33,10 @@ function Header(props) {
 
   const toggleNav = () => {
     header.current.classList.toggle(styles.headerOpen);
+  };
+
+  const closeNav = () => {
+    header.current.classList.remove(styles.headerOpen);
   };
 
   const useStyles = makeStyles({
@@ -77,82 +89,118 @@ function Header(props) {
   const classes = useStyles();
 
   return (
-    <header ref={header} className={`${styles.header} ${styles.headerOpen}`}>
-      <div className={`${styles.list} ${styles.left}`}>
-        <div className={styles.homeContainer}>
-          <Link
-            className={
-              currentPage === "Home" ? `${styles.li} ${styles.home} ${styles.activeLi}` : `${styles.li} ${styles.home}`
-            }
-            to={"/"}
-          >
-            <img className={styles.logo} src={Logo} alt="" />
-          </Link>
-          <div className={styles.hamburger} onClick={toggleNav}>
-            <span className={`${styles.bar} ${styles.topBar}`}></span>
-            <span className={`${styles.bar} ${styles.middleBar}`}></span>
-            <span className={`${styles.bar} ${styles.bottomBar}`}></span>
+    <>
+      <header ref={header} className={styles.header}>
+        <div className={styles.hamburger} onClick={toggleNav}>
+          <span className={`${styles.bar} ${styles.topBar}`}></span>
+          <span className={`${styles.bar} ${styles.middleBar}`}></span>
+          <span className={`${styles.bar} ${styles.bottomBar}`}></span>
+        </div>
+
+        <Link
+          className={styles.mobileLogo}
+          style={{
+            transform: currentPage === "Home" && "scale(1.2) translateX(-45%)",
+          }}
+          to={"/"}
+        >
+          <img className={styles.logo} src={Logo} alt="" />
+        </Link>
+
+        <div className={`${styles.list} ${styles.left}`}>
+          <div className={styles.homeContainer}>
+            <Link
+              className={
+                currentPage === "Home"
+                  ? `${styles.li} ${styles.home} ${styles.activeLi}`
+                  : `${styles.li} ${styles.home}`
+              }
+              onClick={closeNav}
+              to={"/"}
+            >
+              <img className={styles.logo} src={Logo} alt="" />
+            </Link>
+          </div>
+          <div className={styles.pageLinks}>
+            {pages.map((page, index) => {
+              return (
+                !["Sign in", "Home"].includes(page) && (
+                  <Link
+                    key={index}
+                    className={
+                      currentPage === page
+                        ? `${styles.li} ${styles.activeLi}`
+                        : styles.li
+                    }
+                    to={paths[index]}
+                    onClick={closeNav}
+                  >
+                    {page}
+                  </Link>
+                )
+              );
+            })}
           </div>
         </div>
-        <div className={styles.pageLinks}>
-          {pages.map((page, index) => {
-            return (
-              !["Sign in", "Home"].includes(page) && (
-                <Link
-                  key={index}
-                  className={currentPage === page ? `${styles.li} ${styles.activeLi}` : styles.li}
-                  to={paths[index]}
-                >
-                  {page}
-                </Link>
-              )
-            );
-          })}
-        </div>
-      </div>
-      <div className={`${styles.list} ${styles.right}`}>
-        {loggedin ? (
-          <>
-            <IconButton size="small" color="primary" className={classes.icon}>
-              <Add fontSize="small" />
-            </IconButton>
-            <div className={styles.menu}>
-              <AccountCircle fontSize="large" style={{ color: "white" }} />
-              <div className={styles.dropDown}>
-                <span className={styles.pointer}></span>
-                <Card className={classes.root}>
-                  <CardContent className={classes.greetingHead}>
-                    <AccountCircle fontSize="large" style={{ color: "white" }} />
-                    <Typography className={classes.greeting}>ashuvssut</Typography>
-                  </CardContent>
-
-                  <hr style={{background: "white"}}/>
-                  <div className={classes.actions}>
-                    <Button size="small" className={classes.action} startIcon={<Settings />}>
-                      <Link className={classes.link} to="/profile">
-                        profile
-                      </Link>
-                    </Button>
-                    <Button
-                      size="small"
-                      className={classes.action}
-                      startIcon={<ExitToApp />}
-                      onClick={() => setLoggedin(false)}
-                    >
-                      Logout
-                    </Button>
-                  </div>
-                </Card>
+        <div className={`${styles.list} ${styles.right}`}>
+          {loggedin ? (
+            <>
+              <IconButton size="small" color="primary" className={classes.icon}>
+                <Add fontSize="small" />
+              </IconButton>
+              <div className={styles.menu}>
+                <AccountCircle fontSize="large" style={{ color: "white" }} />
+                <div className={styles.dropDown}>
+                  <span className={styles.pointer}></span>
+                  <List className={classes.root}>
+                    <ListItem className={classes.greetingHead}>
+                      <AccountCircle
+                        fontSize="large"
+                        style={{ color: "white" }}
+                      />
+                      <Typography className={classes.greeting}>
+                        ashuvssut
+                      </Typography>
+                    </ListItem>
+                    <Divider />
+                    <ListItem disableGutters>
+                      <List className={classes.actions}>
+                        <Button
+                          size="small"
+                          className={classes.action}
+                          startIcon={<Settings />}
+                        >
+                          <Link className={classes.link} to="/profile">
+                            profile
+                          </Link>
+                        </Button>
+                        <Button
+                          size="small"
+                          className={classes.action}
+                          startIcon={<ExitToApp />}
+                          onClick={() => setLoggedin(false)}
+                        >
+                          Logout
+                        </Button>
+                      </List>
+                    </ListItem>
+                  </List>
+                </div>
               </div>
-            </div>
-          </>
-        ) : (
-          <Link className={styles.li} to={"/signin"} onClick={() => setLoggedin(true)}>
-            Sign in
-          </Link>
-        )}
-      </div>
-    </header>
+            </>
+          ) : (
+            <Link
+              className={styles.li}
+              to={"/signin"}
+              onClick={() => setLoggedin(true)}
+            >
+              Sign in
+            </Link>
+          )}
+        </div>
+      </header>
+      <div className={styles.spacer}></div>
+    </>
   );
 }
 
