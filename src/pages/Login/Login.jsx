@@ -1,71 +1,58 @@
 import React from "react";
-
+import 'font-awesome/css/font-awesome.min.css';
 import "./login.css";
+import loginIllustartion from "../../assets/socialmedia/login.png";
 
 export default function Login() {
     
     return(
+
+<div className="container">
+  <div className="illustration_img">
+    <img src={loginIllustartion}></img>
+  </div>
+  <div className="login-content">
+    <form>
+      <h2  style={{fontSize:"27px"}} className="title">Welcome</h2>
+
+      <h1 style={{fontSize:"18px", marginBottom:"30px"}}>Sign in to your account</h1>
+
+      <div className="input-div one">
+          <div className="i">
+            <i className="fa fa-user"></i>
+          </div>
+          <div className="div">
+            <input type="text" placeholder="Username" className="input"></input>
+          </div>
+      </div>
+
+      <div className="input-div pass">
+        <div className="i"> 
+            <i className="fa fa-lock"></i>
+        </div>
+        <div className="div">
+            <input type="password" placeholder="Password" className="input"></input>
+        </div>
+      </div>
+
+      <a href="#"><span style={{color:"red"}}>Forgot Password?</span></a>
+
+      <div className="loginbutton">
+        <input type="submit" className="btn" value="Login"></input>
+      </div>
+
+      <div id="alternativeLogin">
+        <a href="#"> Create your account! </a>
+      </div>
       
-      <div id="container">
-      <div id="loginform">
-        <FormHeader title=" Sign in to your account" />
-        <Form />
-        <OtherMethods />
+      <div className="icons">
+        <a href="#" id="facebookIcon"></a>
+        <a href="#" id="twitterIcon"></a>
+        <a href="#" id="googleIcon"></a>
       </div>
-      </div>
-    )
-  }
-
-
-const FormHeader = props => (
-    <h2 id="headerTitle">{props.title}</h2>
-);
-
-
-const Form = props => (
-   <div>
-     <FormInput description="Username" placeholder="Enter your username" type="text" />
-     <FormInput description="Password" placeholder="Enter your password" type="password"/>
-     <div class="forgot"><a href="#">Forgot password?</a></div>
-     <FormButton title="Log in"/>
-     
-   </div>
-);
-
-const FormButton = props => (
-  <div id="button" class="row">
-    <button>{props.title}</button>
+    </form>
   </div>
-);
+</div>
 
-const FormInput = props => (
-  <div class="row">
-    <label>{props.description}</label>
-    <input type={props.type} placeholder={props.placeholder}/>
-  </div>  
 );
-
-const OtherMethods = props => (
-  <div id="alternativeLogin">
-    <a href="#"> Create your account! </a>
-   
-    <div id="iconGroup">
-      <Facebook />
-      <Twitter />
-      <Google />
-    </div>
-  </div>
-);
-
-const Facebook = props => (
-  <a href="#" id="facebookIcon"></a>
-);
-
-const Twitter = props => (
-  <a href="#" id="twitterIcon"></a>
-);
-
-const Google = props => (
-  <a href="#" id="googleIcon"></a>
-);
-
+    }
