@@ -13,11 +13,12 @@
     justify-content: center;
     align-items: center;
     grid-gap :5rem;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
     border-radius: 20px;
     box-shadow: 1px 1px 28px 1px rgba(179,179,179,0.36);
     -webkit-box-shadow: 1px 1px 28px 1px rgba(179,179,179,0.36);
     -moz-box-shadow: 1px 1px 28px 1px rgba(179,179,179,0.36);
+	/* border: 1px solid purple; */
 }
 
 .illustration_img img{
@@ -25,6 +26,7 @@
   height: 60vh;
   margin-right: 20px;
   /* border: 2px solid blue; */
+  /* border: 2px solid rgb(150, 151, 86); */
 }
 .div ::placeholder{
   font-size: 14px;
@@ -46,7 +48,7 @@ form{
 	width: 25vw;
   /* height: 100vh; */
   /* border: 2px solid red; */
-  padding: 20px;
+  
 }
 
 .login-content h2{
@@ -217,11 +219,27 @@ a:hover{
 }
 
 
-@media screen and (max-width: 1050px){
+@media screen and (max-width: 1100px){
 	.container{
 		grid-gap: 5rem;
-    width: 70vw;
-    height: 70vh;
+    width: 80vw;
+    height: 80vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-gap :5rem;
+    padding: 0 2rem;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+	}
+}
+@media screen and (max-width: 1200px){
+	.container{
+		grid-gap: 5rem;
+    width: 90vw;
+    height: 90vh;
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -238,22 +256,10 @@ a:hover{
 	form{
 		width: 290px;
 	}
-
-	.login-content h2{
-        font-size: 2.4rem;
-        margin: 8px 0;
-	}
-
-	.illustration_img img{
-		width: 400px;
-	}
-}
-
-@media screen and (max-width: 900px){
 	.container{
 		grid-template-columns: 1fr;
-    width: 70vw;
-    height: 70vh;
+    width: 80vw;
+    height: 90vh;
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -271,5 +277,41 @@ a:hover{
 
 	.login-content{
 		justify-content: center;
+		
+	}
+
+	.login-content h2{
+        font-size: 2.4rem;
+        margin: 8px 0;
+	}
+
+	.illustration_img img{
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.container{
+		grid-template-columns: 1fr;
+    width: 80vw;
+    height: 80vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-gap :5rem;
+    padding: 0 2rem;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+	}
+
+	.illustration_img img{
+		display: none;
+	}
+
+	.login-content{
+		justify-content: center;
+		
 	}
 }
