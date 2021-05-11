@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import 'font-awesome/css/font-awesome.min.css';
 import "./ContactUs.scss";
+import { faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 // import MetaComponent from "../../seo/MetaComponent";
 // import metaData from "../../seo/metaData";
 // import styles from "./contact-us.module.scss";
@@ -100,7 +103,15 @@ const inputFocus4 = (e) => {
             <div className="mail__bottom"></div>
           </div>
         </div>
-        
+
+        {/* <div className="socialMediaIcons"> */}
+          <div className="socials">
+            <a href="#" id="githubIcon"><i style={{fontSize:"36px"}} className="fa fa-github"></i></a>
+            <a href="#" id="linkedinIcon"><i style={{fontSize:"36px"}} className="fa fa-linkedin"></i></a>
+            <a href="#"></a> <FontAwesomeIcon icon={faDiscord} style={{fontSize:"36px", color:"#373737"}}  />
+          </div>
+        {/* </div> */}
+
       </div>
     </div>
   );

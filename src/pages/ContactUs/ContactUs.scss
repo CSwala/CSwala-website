@@ -11,7 +11,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 58.5%;
   overflow-y: scroll;
 }
 body {
@@ -142,7 +142,8 @@ body {
     &--visible{ display: flex;
       justify-content: center;
       align-items: center;
-      &.invisible {transform: translateY(200%);}}
+      &.invisible {transform: translateY(200%);}
+    }
   }
 }
 
@@ -165,6 +166,35 @@ body {
     justify-self: center;
   }
 }
+
+.socials {
+  grid-column: 2 / 3;
+  grid-row: 4 / 7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media only screen and (max-width: 790px) {
+    grid-column: 1 / 2;
+    grid-row: 8 / 9;
+    justify-self: center;
+    margin-bottom: 5rem;
+  }
+}
+#githubIcon{
+  // width: 4rem;
+  // height: 4rem;
+  color: #373737;
+}
+
+#linkedinIcon{
+  // width: 4rem;
+  // height: 4rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  color: #373737;
+}
+
+
 
 .mail {
   position: relative;
