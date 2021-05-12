@@ -1,0 +1,7 @@
+@use "./../../scss/colors";
+
+.root {
+  flex-grow: 1;
+  background: colors.$backgroundDark;
+  font-family: "Roboto Mono", monospace;;
+}
