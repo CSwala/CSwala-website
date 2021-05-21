@@ -9,24 +9,27 @@ import "./index.scss";
 import Preloader from "./components/Preloader/Preloader";
 
 const Home = lazy(() => import("./pages/Home/Home"));
+const Explore = lazy(() => import("./pages/Explore/Explore"));
 const ContactUs = lazy(() => import("./pages/ContactUs/ContactUs"));
 const Login = lazy(() => import("./pages/Login/Login"));
 
 function App({ location }) {
   return (
     <Suspense fallback={<Preloader />}>
-      {location.pathname !== "/404" && <Header currentRoute={location.pathname} />}
+      {location.pathname !== "/404" && (
+        <Header currentRoute={location.pathname} />
+      )}
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/contact" exact component={ContactUs} />
-        <Route path="/explore" exact component={ContactUs} />
+        <Route path="/explore" exact component={Explore} />
         <Route path="/jobs" exact component={ContactUs} />
         <Route path="/feed" exact component={ContactUs} />
         <Route path="/signin" exact component={Login} />
         <Route path="/404" exact component={NotFound} />
         <Redirect to="/404" />
       </Switch>
-      {location.pathname !== "/404" && <Footer />}
+      {location.pathname !== "/404" && <Footer fill={"#0D1017"} />}
     </Suspense>
   );
 }
