@@ -5,8 +5,8 @@
 }
 
 .container {
-  width: 70vw;
-  height: 70vh;
+  width: 80vw;
+  height: 80vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -18,11 +18,6 @@
   -moz-box-shadow: 1px 1px 28px 1px rgba(179, 179, 179, 0.36);
 }
 
-.illustration_img img {
-  width: 30vw;
-  height: 60vh;
-  margin-right: 20px;
-}
 .div ::placeholder {
   font-size: 14px;
 }
@@ -44,7 +39,7 @@ form {
   grid-template-columns: 7% 93%;
   margin: 5px 0;
   padding: 3px 0;
-  border-bottom: 2px solid #d9d9d9;
+  border-top: 2px solid #d9d9d9;
 }
 
 .input-div > div > input {
@@ -56,14 +51,15 @@ form {
   border: none;
   outline: none;
   background: none;
-  padding: 0rem 1.5rem;
+  padding: 1.2rem 1.5rem;
   font-size: 1rem;
   color: #555;
   font-family: "poppins", sans-serif;
-  border-top: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
 }
 i {
   margin-right: 1rem;
+  margin-top: 0.5rem;
 }
 p {
   font-size: 1rem;
@@ -112,8 +108,6 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    grid-gap: 5rem;
-    padding: 0 2rem;
     box-shadow: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -121,15 +115,12 @@ p {
 }
 @media screen and (max-width: 1200px) {
   .container {
-    grid-gap: 5rem;
     width: 90vw;
     height: 90vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    grid-gap: 5rem;
-    padding: 0 2rem;
     box-shadow: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -138,18 +129,16 @@ p {
 
 @media screen and (max-width: 1000px) {
   form {
-    width: 290px;
+    width: 300px;
   }
   .container {
-    grid-template-columns: 1fr;
+    margin-left: 5rem;
     width: 80vw;
-    height: 90vh;
+    height: 80vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    grid-gap: 5rem;
-    padding: 0 2rem;
     box-shadow: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -163,14 +152,6 @@ p {
     justify-content: center;
   }
 
-  .forget-content h2 {
-    font-size: 2.4rem;
-    margin: 8px 0;
-  }
-
-  .illustration_img img {
-    width: 400px;
-  }
 }
 
 @media screen and (max-width: 900px) {
@@ -182,8 +163,6 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    grid-gap: 5rem;
-    padding: 0 2rem;
     box-shadow: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -195,5 +174,11 @@ p {
 
   .forget-content {
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container{
+    margin: 0;
   }
 }

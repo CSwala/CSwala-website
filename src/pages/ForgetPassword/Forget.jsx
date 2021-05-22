@@ -7,7 +7,7 @@ const Forget = () => {
   return (
     <div className="container">
       <div className="illustration_img">
-        <img src={forget} width="400px" height="400px"></img>
+        <img src={forget} width="500px" height="500px"></img>
       </div>
       <div className="forget-content">
         <form>
