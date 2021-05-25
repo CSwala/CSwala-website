@@ -35,7 +35,7 @@ export default function Login() {
         </div>
       </div>
 
-      <a href="#"><span style={{color:"red"}}>Forgot Password?</span></a>
+      <a href="/forget"><span style={{color:"red"}}>Forgot Password?</span></a>
 
       <div className="loginbutton">
         <input type="submit" className="btn" value="Login"></input>
