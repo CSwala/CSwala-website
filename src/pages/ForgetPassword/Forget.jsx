@@ -10,7 +10,7 @@ const Forget = () => {
         <img src={forget} width="500px" height="500px"></img>
       </div>
       <div className="forget-content">
-        <form>
+        <form action = "/reset">
           <h1 style={{ fontSize: "30px" }} className="title">
             Forgot Password?
           </h1>
