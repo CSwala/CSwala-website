@@ -58,7 +58,7 @@
       justify-content: center;
       margin-left: 15px;
       width: 200px;
-      font-family: "Roboto Mono", monospace;
+      font-family: "Work Sans", bold;
       transform: translateY(-14px);
       @media (max-width: 660px) {
         width: 100%;
@@ -81,7 +81,9 @@
         margin-bottom: 18px;
         font-size: 13px;
         &:hover {
-          color: colors.$primaryLight;
+          color: colors.$primary;
+          font-size: 14px;
+
         }
       }
       .socialDiv {
@@ -103,7 +105,7 @@
         font-size: 1.3rem;
       }
       .category {
-        font-family: "Roboto Mono", monospace;
+        font-family: "Work Sans", bold;
         font-size: 15px;
         justify-content: center;
         display: flex;
@@ -116,18 +118,20 @@
           color: colors.$white;
           display: block;
           &:hover {
-            color: colors.$primaryLight;
+          font-size: 16px;
+            color: colors.$primary;
           }
         }
       }
     }
   }
 
+
   .row2 {
     position: relative;
     flex-direction: row;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
     justify-content: center;
     align-items: flex-end;
     padding: 15px;
@@ -136,6 +140,7 @@
       text-align: center;
       color: colors.$white;
       width: 30%;
+
       min-width: 256px;
       font-weight: 200;
       font-size: 0.9rem;
@@ -143,7 +148,8 @@
         text-decoration: none;
         color: colors.$white;
         &:hover {
-          color: colors.$primary;
+                    font-size: 16px;
+            color: colors.$primary;
         }
       }
     }
