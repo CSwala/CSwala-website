@@ -13,7 +13,7 @@ import {
   Fade,
 } from "@material-ui/core";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     textAlign: "left",
@@ -56,19 +56,20 @@ function Explore() {
   );
 
   const getData = () => {
-    fetch("https://cswala-api.vercel.app/v1/cs/", {
+    fetch("https://api.cswaala.in/v1/cs", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
       },
     })
-      .then(response => {
-        console.log(response);
+      .then((response) => {
+        // console.log(response);
         return response.json();
       })
-      .then(myJson => {
-        console.log(myJson);
+      .then((myJson) => {
+        // console.log(myJson);
         setData(myJson.Resources);
+        sessionStorage.setItem("store", JSON.stringify(myJson.Resources));
       });
   };
 
@@ -104,30 +105,36 @@ function Explore() {
                         minHeight="95px"
                         height="100%"
                       >
-                        <Paper className={classes.paper} elevation={3}>
-                          <Tooltip
-                            title={cardInfo.title}
-                            TransitionProps={{ timeout: 1500 }}
-                            TransitionComponent={Fade}
-                            leaveDelay={0}
-                            placement="bottom-start"
-                          >
-                            <Typography
-                              variant="subtitle1"
-                              align="left"
-                              className={classes.subtitle}
+                        <a
+                          href={
+                            "/" + cardInfo.title.replace(" ", "-").toLowerCase()
+                          }
+                        >
+                          <Paper className={classes.paper} elevation={3}>
+                            <Tooltip
+                              title={cardInfo.title}
+                              TransitionProps={{ timeout: 1500 }}
+                              TransitionComponent={Fade}
+                              leaveDelay={0}
+                              placement="bottom-start"
                             >
-                              {cardInfo.title}
+                              <Typography
+                                variant="subtitle1"
+                                align="left"
+                                className={classes.subtitle}
+                              >
+                                {cardInfo.title}
+                              </Typography>
+                            </Tooltip>
+                            <Typography
+                              variant="body2"
+                              style={{ color: "#ffffff59" }}
+                              className={classes.tag}
+                            >
+                              {cardInfo.tag}
                             </Typography>
-                          </Tooltip>
-                          <Typography
-                            variant="body2"
-                            style={{ color: "#ffffff59" }}
-                            className={classes.tag}
-                          >
-                            {cardInfo.tag}
-                          </Typography>
-                        </Paper>
+                          </Paper>
+                        </a>
                       </Box>
                     </Grid>
                   );

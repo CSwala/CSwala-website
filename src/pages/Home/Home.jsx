@@ -2,8 +2,9 @@ import React  from "react";
 import MetaComponent from "../../seo/MetaComponent";
 import metaData from "../../seo/metaData";
 
-import Banner from "./sections/Banner/Banner";
-import Team from "./sections/Team/Team";
+// import Banner from "./sections/Banner/Banner";
+// import Team from "./sections/Team/Team";
+import Landing from "./sections/Landing";
 
 import style from "./home.module.scss";
 
@@ -15,8 +16,8 @@ function Home() {
         description={metaData.home.description}
         keywords={metaData.home.keywords}
       />
-      <Banner />
-      <Team />
+      <Landing />
+      {/* <Team /> */}
     </div>
   );
 }

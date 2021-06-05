@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { withRouter } from "react-router";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -10,6 +10,7 @@ import Preloader from "./components/Preloader/Preloader";
 
 const Home = lazy(() => import("./pages/Home/Home"));
 const Explore = lazy(() => import("./pages/Explore/Explore"));
+const DetailPage = lazy(() => import("./pages/DetailPage/DetailPage"));
 const ContactUs = lazy(() => import("./pages/ContactUs/ContactUs"));
 const Login = lazy(() => import("./pages/Login/Login"));
 const Forget = lazy(() => import("./pages/ForgetPassword/Forget"));
@@ -25,11 +26,12 @@ function App({ location }) {
         <Route path="/" exact component={Home} />
         <Route path="/contact" exact component={ContactUs} />
         <Route path="/explore" exact component={Explore} />
+        <Route path="/:slug" exact component={DetailPage} />
         <Route path="/jobs" exact component={ContactUs} />
         <Route path="/feed" exact component={ContactUs} />
         <Route path="/signin" exact component={Login} />
-        <Route path="/forget" component={Forget}/>
-        <Route path="/reset" component={Reset}/>
+        <Route path="/forget" component={Forget} />
+        <Route path="/reset" component={Reset} />
         <Route path="/404" exact component={NotFound} />
         <Redirect to="/404" />
       </Switch>
