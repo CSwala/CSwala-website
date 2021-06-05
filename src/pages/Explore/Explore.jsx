@@ -18,8 +18,8 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     textAlign: "left",
     color: "white",
-    background: "#13171C",
-    border: "1px solid #388afc73",
+    background: "#1C1C1C",
+    border: "0.5px solid #BABABA",
     display: "grid",
     justifyItems: "flex-start",
     alignItems: "center",
@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
   },
   subtitle: {
     lineHeight: 1.4,
-    fontFamily: '"Roboto Mono", monospace',
+    fontFamily: '"Work Sans", bold',
     display: "-webkit-box",
     lineClamp: 1,
     boxOrient: "vertical",
@@ -40,6 +40,7 @@ const useStyles = makeStyles((theme) => ({
   tag: {
     display: "-webkit-box",
     lineClamp: 1,
+    fontFamily: '"Work Sans", bold',
     boxOrient: "vertical",
     textOverflow: "ellipsis",
     overflow: "hidden",
