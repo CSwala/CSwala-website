@@ -5,7 +5,7 @@ import loginIllustartion from "../../assets/socialmedia/login.png";
 
 export default function Login() {
   return (
-    <div className="container">
+    <div className="container-ctm-login container">
       <div className="illustration_img">
         <img src={loginIllustartion}></img>
       </div>

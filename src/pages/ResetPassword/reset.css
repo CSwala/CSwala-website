@@ -4,10 +4,9 @@
   box-sizing: border-box;
 }
 
-.container {
-  min-height: 500px;
+.container-ctm-reset {
+  min-height: 900px;
   margin: 40px auto !important;
-
   width: 80vw;
   height: 80vh;
   display: flex;

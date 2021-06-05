@@ -5,7 +5,7 @@ import forget from "../../assets/forget-pass/forget.png";
 
 const Forget = () => {
   return (
-    <div className="container">
+    <div className="container-ctm-forget container">
       <div className="illustration_img">
         <img src={forget} width="500px" height="500px"></img>
       </div>
