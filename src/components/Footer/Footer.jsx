@@ -10,13 +10,7 @@ export default function Footer(props) {
   return (
     <footer className={styles.footer}>
       <div className={styles.topShape}>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-          <path
-            style={{ fill: props.fill ? props.fill : "white" }}
-            className={styles.svgPath}
-            d="M761.9,44.1L643.1,27.2L333.8,98L0,3.8V0l1000,0v3.9"
-          ></path>
-        </svg>
+        
       </div>
       <div className={styles.tint}></div>
       <div className={styles.row1}>
@@ -47,7 +41,10 @@ export default function Footer(props) {
                 speed={1}
               />
             </a>
-            <a href="https://discord.gg/yBDP4C2DAq" className={styles.discordIcon}>
+            <a
+              href="https://discord.gg/yBDP4C2DAq"
+              className={styles.discordIcon}
+            >
               <FontAwesomeIcon icon={faDiscord} size="2x" color="white" />
             </a>
           </div>
@@ -73,7 +70,8 @@ export default function Footer(props) {
         <p className={styles.footerText}>Made with ❤️ in India</p>
         <p className={styles.footerText}>Copyright 2021 CSWALA, Org</p>
         <p className={styles.footerText}>
-          <a href="/#">Privacy Policy</a> | <a href="/#">Site Map</a> | <a href="/#">Report a bug</a>
+          <a href="/#">Privacy Policy</a> | <a href="/#">Site Map</a> |{" "}
+          <a href="/#">Report a bug</a>
         </p>
       </div>
     </footer>
