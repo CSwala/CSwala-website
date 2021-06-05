@@ -4,7 +4,7 @@ import "./reset.css";
 import resetIllustration from "../../assets/reset-pass/reset.svg";
 
 const Reset = () => (
-    <div className="container">
+    <div className="container-ctm-reset container">
         <div className="illustration_img">
             <img src={resetIllustration} width="500px" height="500px"></img>
         </div>

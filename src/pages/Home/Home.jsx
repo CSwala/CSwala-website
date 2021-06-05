@@ -1,4 +1,4 @@
-import React  from "react";
+import React, { useEffect } from "react";
 import MetaComponent from "../../seo/MetaComponent";
 import metaData from "../../seo/metaData";
 
@@ -9,6 +9,24 @@ import Landing from "./sections/Landing";
 import style from "./home.module.scss";
 
 function Home() {
+  const getData = () => {
+    fetch("https://api.cswaala.in/v1/cs", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        return response.json();
+      })
+      .then((myJson) => {
+        sessionStorage.setItem("store", JSON.stringify(myJson.Resources));
+      });
+  };
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
     <div className={style.root}>
       <MetaComponent
