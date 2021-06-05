@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 
-.container {
+.container-ctm-login {
   margin: 40px auto !important;
-
   width: 70vw;
+  min-height: 800px;
   height: 70vh;
   display: flex;
   flex-direction: row;
@@ -21,10 +21,9 @@
   -moz-box-shadow: 1px 1px 28px 1px rgba(179, 179, 179, 0.36);
   /* border: 1px solid purple; */
 }
-
 .illustration_img img {
   width: 30vw;
-  height: 60vh;
+  height: 100%;
   margin-right: 20px;
   /* border: 2px solid blue; */
   /* border: 2px solid rgb(150, 151, 86); */
@@ -52,6 +51,7 @@ form {
 
 .login-content h2 {
   margin: 15px 0;
+  font-weight: bold !important;
   color: #333;
   text-transform: uppercase;
   font-size: 2.9rem;

@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 
-.container {
+.container-ctm-forget {
   margin: 40px auto !important;
-  min-height: 500px;
+  min-height: 600px;
   width: 80vw;
-  height: 80vh;
+  height: 70vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
