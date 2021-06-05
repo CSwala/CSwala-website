@@ -1,14 +1,12 @@
-
 .root {
   flex-grow: 1;
-  background: #0D1117;
+  background: #0d1117;
   color: #fff;
   font-family: "Roboto Mono", monospace;
 }
 a {
   text-decoration: none;
 }
-
 
 .card_wrapper {
   margin: 50px;
@@ -18,7 +16,7 @@ a {
 .card_wrapper h2 {
   margin-bottom: 0;
 }
-ul {
+.cardData ul {
   display: flex;
   overflow-x: scroll;
   scroll-behavior: smooth;
@@ -26,16 +24,22 @@ ul {
   padding: 10px 0;
   text-decoration: none;
   list-style: none;
+
   scrollbar-width: none;
+  -ms-overflow-style: none;
 }
-img {
+.cardData ul::-webkit-scrollbar {
+  display: none;
+}
+
+.cardData img {
   max-height: 480px;
   width: 100%;
 }
 .cardTitle {
   width: 100%;
   max-width: 1140px;
-  background: rgba(255,255,255, 0.04);
+  background: rgba(255, 255, 255, 0.04);
   padding: 24px;
   border-radius: 8px;
 }
@@ -43,17 +47,17 @@ img {
   font-family: "Roboto Mono", monospace;
   margin-bottom: 0.5rem;
 }
-.cardTitle a{
+.cardTitle a {
   padding: 10px 16px;
   text-decoration: none;
   font-size: 14px;
   font-family: "Roboto Mono", monospace;
   font-weight: 600;
   border-radius: 25px;
-  background: rgba(255,255,255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
-.cardTitle a:hover{
+.cardTitle a:hover {
   opacity: 0.7;
 }
 .cardData {

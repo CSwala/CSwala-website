@@ -107,7 +107,7 @@ function Explore() {
                       >
                         <a
                           href={
-                            "/" + cardInfo.title.replace(" ", "-").toLowerCase()
+                            "/e/" + cardInfo.title.replace(" ", "-").toLowerCase()
                           }
                         >
                           <Paper className={classes.paper} elevation={3}>
