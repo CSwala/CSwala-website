@@ -1,0 +1,70 @@
+
+.root {
+  flex-grow: 1;
+  background: #0D1117;
+  color: #fff;
+  font-family: "Roboto Mono", monospace;
+}
+a {
+  text-decoration: none;
+}
+
+
+.card_wrapper {
+  margin: 50px;
+  margin-top: 20px;
+  text-align: left;
+}
+.card_wrapper h2 {
+  margin-bottom: 0;
+}
+ul {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  gap: 12px;
+  padding: 10px 0;
+  text-decoration: none;
+  list-style: none;
+  scrollbar-width: none;
+}
+img {
+  max-height: 480px;
+  width: 100%;
+}
+.cardTitle {
+  width: 100%;
+  max-width: 1140px;
+  background: rgba(255,255,255, 0.04);
+  padding: 24px;
+  border-radius: 8px;
+}
+.cardTitle h2 {
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 0.5rem;
+}
+.cardTitle a{
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600;
+  border-radius: 25px;
+  background: rgba(255,255,255, 0.1);
+  color: #fff;
+}
+.cardTitle a:hover{
+  opacity: 0.7;
+}
+.cardData {
+  margin: 60px 0;
+}
+.cardData h4 {
+  font-weight: bold;
+  font-family: "Roboto Mono", monospace;
+}
+@media only screen and (max-width: 768px) {
+  .card_wrapper {
+    margin: 50px 16px;
+  }
+}
