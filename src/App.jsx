@@ -26,7 +26,7 @@ function App({ location }) {
         <Route path="/" exact component={Home} />
         <Route path="/contact" exact component={ContactUs} />
         <Route path="/explore" exact component={Explore} />
-        <Route path="/:slug" exact component={DetailPage} />
+        <Route path="/e/:slug" exact component={DetailPage} />
         <Route path="/jobs" exact component={ContactUs} />
         <Route path="/feed" exact component={ContactUs} />
         <Route path="/signin" exact component={Login} />
