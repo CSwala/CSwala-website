@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
   },
   tag: {
     display: "-webkit-box",
-    lineClamp: 2,
+    lineClamp: 1,
     boxOrient: "vertical",
     textOverflow: "ellipsis",
     overflow: "hidden",
