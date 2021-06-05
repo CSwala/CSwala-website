@@ -76,7 +76,6 @@ function Explore() {
   useEffect(() => {
     getData();
   }, []);
-
   useEffect(() => {
     if (data.length !== 0) {
       sessionStorage.setItem("store", JSON.stringify(data));
@@ -148,6 +147,5 @@ function Explore() {
     </div>
   );
 }
-
 
 export default Explore;
