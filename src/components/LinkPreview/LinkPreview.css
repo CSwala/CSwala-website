@@ -1,19 +1,22 @@
 
 .LinkPreview {
   position: relative;
-  height: 248px;
+  height: 250px;
   display: block;
   max-width: 280px;
+  scroll-behavior: all;
   min-width: 280px;
   overflow: hidden;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   border-radius: 0.45rem;
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
 .LinkPreview:hover{
-  color: #fff;
-  opacity: 0.6;
+  color: #BABABA;
+  opacity: 0.8;
+  height: 260px;
+
 }
 
 .LinkPreview img {
@@ -24,6 +27,7 @@
   outline: none;
   border: none;
 }
+
 .info {
   position: absolute;
   bottom: 0;

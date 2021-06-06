@@ -102,11 +102,11 @@
       height: 110px;
       min-width: 170px;
       .head {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
       }
       .category {
         font-family: "Work Sans", bold;
-        font-size: 15px;
+        font-size: 18px;
         justify-content: center;
         display: flex;
         align-items: center;
@@ -118,7 +118,7 @@
           color: colors.$white;
           display: block;
           &:hover {
-          font-size: 16px;
+          font-size: 20px;
             color: colors.$primary;
           }
         }
@@ -133,12 +133,14 @@
     display: flex;
     flex-wrap: wrap;  
     justify-content: center;
+    font-family: "Work Sans", bold;
     align-items: flex-end;
     padding: 15px;
     gap: 7px;
     .footerText {
       text-align: center;
       color: colors.$white;
+      font-family: "Work Sans", bold;
       width: 30%;
 
       min-width: 256px;
@@ -148,7 +150,7 @@
         text-decoration: none;
         color: colors.$white;
         &:hover {
-                    font-size: 16px;
+
             color: colors.$primary;
         }
       }

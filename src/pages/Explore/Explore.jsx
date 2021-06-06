@@ -19,13 +19,18 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: "white",
     background: "#1C1C1C",
-    border: "0.5px solid #BABABA",
+    border: "1px solid rgba(255, 255, 255, 0.12)",
     display: "grid",
     justifyItems: "flex-start",
     alignItems: "center",
     paddingLeft: 35,
     paddingRight: 35,
     overflow: "hidden",
+            '&:hover': {
+            background: "#1a1a1a",
+            border: "1px solid rgba(255, 255, 255, 0.22)",
+            
+        },
   },
   subtitle: {
     lineHeight: 1.4,

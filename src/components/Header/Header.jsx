@@ -20,7 +20,8 @@ function Header(props) {
   const [loggedin, setLoggedin] = useState(false);
 
   const pages = ["Home", "Explore", "Job Hunt", "Hack Feed", "Sign in"];
-  const paths = ["/", "/explore", "/jobs", "/feed", "/signin"];
+  //const paths = ["/", "/explore", "/jobs", "/feed", "/signin"];
+  const paths = ["/", "/explore", "/explore", "/explore", "/signin"];
 
   let currentPage;
 
