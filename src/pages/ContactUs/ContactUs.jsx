@@ -12,7 +12,7 @@ function ContactUs() {
         description={metaData.contact.description}
         keywords={metaData.contact.keywords}
       />
-      Contact Us page
+      Under Development
     </div>
   );
 }

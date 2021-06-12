@@ -17,7 +17,7 @@ export default function Footer(props) {
         <div className={styles.col1}>
           <div className={styles.top}>
             <img className={styles.logo} src={Logo} alt="" />
-            <p>CSwala</p>
+
           </div>
           <a href="mailto:cs.wala.guy@gmail.com">cs.wala.guy@gmail.com</a>
           <div className={styles.socialDiv}>
@@ -58,7 +58,7 @@ export default function Footer(props) {
           </ul>
         </div>
         <div className={styles.subColumn}>
-          <p className={styles.head}>Resources</p>
+          <p className={styles.head} text-align="centre">Resources</p>
           <ul className={styles.category}>
             <a href="/#">Projects</a>
             <a href="/#">Docs</a>
@@ -68,7 +68,7 @@ export default function Footer(props) {
       </div>
       <div className={styles.row2}>
         <p className={styles.footerText}>Made with ❤️ in India</p>
-        <p className={styles.footerText}>Copyright 2021 CSWALA, Org</p>
+        <p className={styles.footerText}>© Copyright 2021 CSwaala</p>
         <p className={styles.footerText}>
           <a href="/#">Privacy Policy</a> | <a href="/#">Site Map</a> |{" "}
           <a href="/#">Report a bug</a>

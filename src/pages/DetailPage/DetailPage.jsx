@@ -58,31 +58,31 @@ function DetailPage() {
             <a href={Details.documentation}>📝 Docs</a>
           </div>
           <div className="cardData ">
-            <h4>Courses</h4>
+            <h4>Best Courses</h4>
             <ul className="scroller">
               {Courses.map((value, index) => {
                 return <LinkPreview url={value} />;
               })}
             </ul>
-            <h4>Youtube</h4>
+            <h4>Youtube Creators</h4>
             <ul className="scroller">
               {Youtube.map((value, index) => {
                 return <LinkPreview url={value} />;
               })}
             </ul>
-            <h4>Github</h4>
+            <h4>Dedicated Github Pages</h4>
             <ul className="scroller">
               {Github.map((value, index) => {
                 return <LinkPreview url={value} />;
               })}
             </ul>
-            <h4>Websites</h4>
+            <h4>Useful Websites</h4>
             <ul className="scroller">
               {Websites.map((value, index) => {
                 return <LinkPreview url={value} />;
               })}
             </ul>
-            <h4>Tips</h4>
+            <h4>Tips/Hacks</h4>
             <ul className="scroller">
               {Tips.map((value, index) => {
                 return <LinkPreview url={value} />;

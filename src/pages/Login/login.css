@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: #ffffff;
   align-items: center;
   grid-gap: 5rem;
   /* padding: 0 2rem; */
@@ -143,7 +144,7 @@ form {
   padding: 0.5rem 0.7rem;
   font-size: 1.2rem;
   color: #555;
-  font-family: "poppins", sans-serif;
+   font-family: "Work Sans", bold;
 }
 
 .input-div.pass {
@@ -207,7 +208,7 @@ a:hover {
   background-size: 200%;
   font-size: 1rem;
   color: #fff;
-  font-family: "Poppins", sans-serif;
+   font-family: "Work Sans", bold;
   text-transform: uppercase;
   margin: 2rem 0;
   cursor: pointer;
