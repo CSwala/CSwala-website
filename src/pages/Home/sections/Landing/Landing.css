@@ -1,5 +1,5 @@
 #HomePage {
-  background: #0d1117;
+  background: #1C1C1C;
 }
 #hero {
   width: 100%;
@@ -10,7 +10,7 @@
   position: relative;
   min-height: 800px;
   height: calc(100vh - 90px);
-  background: #0d1117;
+  background: #222222;
 }
 #hero h1 {
   margin: 0 0 20px 0;
@@ -21,33 +21,42 @@
 }
 
 #hero h1 span {
-  border-bottom: 4px solid #0858f9;
+  border-bottom: 4px solid #FBB03B;
+  font-size: 60px;
+}
+
+#hero h1 span:hover{
+  border-bottom: 4px solid #1C1C1C;
+  color: #FBB03B;
+  font-size: 70px;
 }
 
 #hero h2 {
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 40px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Work Sans", bold;
 }
 
 #hero .btn-get-started {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Work Sans", bold;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px 30px;
+  padding: 10px 20px;
   text-decoration: none;
   border-radius: 50px;
   transition: 0.5s;
-  color: #fff;
-  background: #0858f9;
+  color: #1C1C1C;
+  background: #FBB03B;
 }
 
 #hero .btn-get-started:hover {
-  background: #388afc;
+  background: #1C1C1C;
+  color: #FBB03B;
+  font-size: 22px;
 }
 
 #hero .animated {

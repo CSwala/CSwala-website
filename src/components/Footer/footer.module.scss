@@ -7,7 +7,6 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
   .topShape {
     overflow: hidden;
     position: relative;
@@ -29,7 +28,7 @@
       overflow: hidden;
 
       .svgPath {
-        fill: colors.$white;
+        fill: colors.$black;
         -webkit-transform-origin: center;
         -ms-transform-origin: center;
         transform-origin: center;
@@ -58,7 +57,7 @@
       justify-content: center;
       margin-left: 15px;
       width: 200px;
-      font-family: "Roboto Mono", monospace;
+      font-family: "Work Sans", bold;
       transform: translateY(-14px);
       @media (max-width: 660px) {
         width: 100%;
@@ -81,7 +80,8 @@
         margin-bottom: 18px;
         font-size: 13px;
         &:hover {
-          color: colors.$primaryLight;
+          color: colors.$primary;
+
         }
       }
       .socialDiv {
@@ -100,11 +100,11 @@
       height: 110px;
       min-width: 170px;
       .head {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
       }
       .category {
-        font-family: "Roboto Mono", monospace;
-        font-size: 15px;
+        font-family: "Work Sans", bold;
+        font-size: 18px;
         justify-content: center;
         display: flex;
         align-items: center;
@@ -116,26 +116,31 @@
           color: colors.$white;
           display: block;
           &:hover {
-            color: colors.$primaryLight;
+          
+            color: colors.$primary;
           }
         }
       }
     }
   }
 
+
   .row2 {
     position: relative;
     flex-direction: row;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
     justify-content: center;
+    font-family: "Work Sans", bold;
     align-items: flex-end;
     padding: 15px;
     gap: 7px;
     .footerText {
       text-align: center;
       color: colors.$white;
+      font-family: "Work Sans", bold;
       width: 30%;
+
       min-width: 256px;
       font-weight: 200;
       font-size: 0.9rem;
@@ -143,9 +148,13 @@
         text-decoration: none;
         color: colors.$white;
         &:hover {
-          color: colors.$primary;
+
+            color: colors.$primary;
         }
       }
     }
   }
+}
+ul{
+  padding: 0;
 }

@@ -6,7 +6,7 @@
 
 .header {
   background-color: colors.$backgroundLight;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Work Sans", bold;
   font-weight: 600;
   display: flex;
   z-index: 1;
@@ -14,7 +14,7 @@
   align-items: center;
   padding: 15px 15px 15px 30px;
   gap: 15px;
-  font-size: 14px;
+  font-size: 18px;
   position: fixed;
   top: 0;
   left: 0;
@@ -60,6 +60,7 @@
         background-color: colors.$primary;
       }
       &:hover {
+        font-size: 18px;
         &::after {
           left: 0%;
           opacity: 1;

@@ -20,7 +20,8 @@ function Header(props) {
   const [loggedin, setLoggedin] = useState(false);
 
   const pages = ["Home", "Explore", "Job Hunt", "Hack Feed", "Sign in"];
-  const paths = ["/", "/explore", "/jobs", "/feed", "/signin"];
+  //const paths = ["/", "/explore", "/jobs", "/feed", "/signin"];
+  const paths = ["/", "/explore", "/explore", "/explore", "/signin"];
 
   let currentPage;
 
@@ -66,7 +67,7 @@ function Header(props) {
       fontSize: 14,
       textAlign: "center",
       color: "#f0f0f0",
-      fontFamily: "'Open Sans', sans-serif",
+      fontFamily: "'Work Sans', bold",
     },
     actions: {
       padding: "10px 0px",
@@ -79,9 +80,9 @@ function Header(props) {
       borderRadius: 0,
       width: "100%",
       color: "#f0f0f0",
-      fontFamily: "'Open Sans', sans-serif",
+      fontFamily: "'Work Sans', bold",
       "&:hover": {
-        backgroundColor: "rgba(225, 225, 225, 0.1)",
+        backgroundColor: "#1c1c1c",
       },
     },
   });

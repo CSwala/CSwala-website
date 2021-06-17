@@ -10,6 +10,7 @@
   width: 80vw;
   height: 70vh;
   display: flex;
+  background-color: #ffffff;
   flex-direction: row;
   justify-content: center;
   align-items: center;

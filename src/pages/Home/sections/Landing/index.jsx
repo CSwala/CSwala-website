@@ -11,7 +11,7 @@ function Landing() {
             <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
               <div data-aos="zoom-out">
                 <h1>
-                  Gather all the knowledge With <span>CSWALA</span>
+                  Gather information about everything and anything there is in Computer Science and related fields With <span>CSwaala</span>
                 </h1>
                 <h2>
                   Find the best resources in one place, which are already
