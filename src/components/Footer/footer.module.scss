@@ -7,7 +7,6 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
   .topShape {
     overflow: hidden;
     position: relative;
@@ -29,7 +28,7 @@
       overflow: hidden;
 
       .svgPath {
-        fill: colors.$white;
+        fill: colors.$black;
         -webkit-transform-origin: center;
         -ms-transform-origin: center;
         transform-origin: center;
@@ -155,4 +154,7 @@
       }
     }
   }
+}
+ul{
+  padding: 0;
 }
