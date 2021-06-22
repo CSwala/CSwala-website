@@ -7,7 +7,9 @@
 a {
   text-decoration: none;
 }
-
+.scroller{
+  position: relative;
+}
 .card_wrapper {
   margin: 50px;
   margin-top: 20px;
@@ -60,9 +62,18 @@ a {
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
+.RightArrow{
+  position: absolute;
+  right:-50px;
+  background:rgba(255, 255, 255, 0.123);
+  opacity:0.4;
+  border-radius:50%;
+  top: 50%;
+  transform:translateY(-50%)
+  
+}
 .cardTitle a:hover {
   background: #FBB03B;
-  font-size: 16px;
   color: #1c1c1c;
 }
 .cardData {

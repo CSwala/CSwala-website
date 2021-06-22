@@ -15,7 +15,7 @@ function LinkPreview(props) {
   // console.log(APIdata)
   if (APIdata) {
     return (
-      <a href={APIdata.url} className="LinkPreview">
+      <a target="_blank" href={APIdata.url} className="LinkPreview">
         {APIdata.image ? (
           <img src={APIdata.image} alt="Thumbnail" />
         ) : (
