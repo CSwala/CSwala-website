@@ -48,14 +48,11 @@
     .row1 {
         color: colors.$white;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
-        flex-direction: column;
         position: relative;
-        margin: 50px 15px;
-        display: flex;
+        margin: 50px;
         flex-wrap: wrap;
-        justify-content: space-around;
         .col1 {
             display: flex;
             flex-direction: column;
