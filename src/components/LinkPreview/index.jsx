@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
-import styles from "./LinkPreview.css";
-import blank from "../../assets/linkpreview/blank.png";
+import styles from './LinkPreview.css';
+import blank from '../../assets/linkpreview/blank.png';
 
 function LinkPreview(props) {
-  const [APIdata, setAPIdata] = useState({});
+    const [APIdata, setAPIdata] = useState({});
 
   useEffect(async () => {
     let URI = "https://api.5tupidbrain.in/v1/url-meta?url=" + props.url;
