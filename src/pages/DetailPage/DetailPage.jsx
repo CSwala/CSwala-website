@@ -1,6 +1,6 @@
-import { useState, useEffect, React } from "react";
+import { useState, useEffect, React, useRef } from "react";
 import { useParams } from "react-router-dom";
-import styles from "./Details.css";
+import "./Details.css";
 import LinkPreview from "../../components/LinkPreview";
 
 function DetailPage() {
@@ -11,7 +11,11 @@ function DetailPage() {
   const [Websites, setWebsites] = useState([]);
   const [Github, setGithub] = useState([]);
   const [Tips, setTips] = useState([]);
-
+  const bestCoursesRef = useRef(null);
+  const youtubeCreatersRef = useRef(null);
+  const githubPagesRef = useRef(null);
+  const usefulWebsiteRef = useRef(null);
+  const tipsNHacksRef = useRef(null);
   const getData = () => {
     return fetch("https://api.cswaala.in/v1/cs", {
       headers: {
@@ -26,6 +30,11 @@ function DetailPage() {
         sessionStorage.setItem("store", JSON.stringify(myJson.Resources));
         return myJson.Resources;
       });
+  };
+  const scroll = (ref, scrollOffset) => {
+    console.log(scrollOffset);
+    ref.current.scrollLeft += scrollOffset;
+    console.log(ref.current);
   };
 
   useEffect(async () => {
@@ -62,7 +71,23 @@ function DetailPage() {
           <div className="cardData">
             <h4>Best Courses</h4>
             <div className="scroller">
-              <ul>
+              <span className="LeftArrow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  width="25px"
+                  viewBox="0 0 20 20"
+                  fill="#fff"
+                  onClick={() => scroll(bestCoursesRef, -300)}
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+              <ul ref={bestCoursesRef}>
                 {Courses.map((value, index) => {
                   return <LinkPreview url={value} />;
                 })}
@@ -74,6 +99,7 @@ function DetailPage() {
                   width="25px"
                   viewBox="0 0 20 20"
                   fill="#fff"
+                  onClick={() => scroll(bestCoursesRef, 300)}
                 >
                   <path
                     fill-rule="evenodd"
@@ -85,7 +111,23 @@ function DetailPage() {
             </div>
             <h4>Youtube Creators</h4>
             <div className="scroller">
-              <ul>
+              <span className="LeftArrow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  width="25px"
+                  viewBox="0 0 20 20"
+                  fill="#fff"
+                  onClick={() => scroll(youtubeCreatersRef, -300)}
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+              <ul ref={youtubeCreatersRef}>
                 {Youtube.map((value, index) => {
                   return <LinkPreview url={value} />;
                 })}
@@ -97,6 +139,7 @@ function DetailPage() {
                   width="25px"
                   viewBox="0 0 20 20"
                   fill="#fff"
+                  onClick={() => scroll(youtubeCreatersRef, 300)}
                 >
                   <path
                     fill-rule="evenodd"
@@ -107,8 +150,25 @@ function DetailPage() {
               </span>
             </div>
             <h4>Dedicated Github Pages</h4>
+
             <div className="scroller">
-              <ul>
+              <span className="LeftArrow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  width="25px"
+                  viewBox="0 0 20 20"
+                  fill="#fff"
+                  onClick={() => scroll(githubPagesRef, -300)}
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+              <ul ref={githubPagesRef}>
                 {Github.map((value, index) => {
                   return <LinkPreview url={value} />;
                 })}
@@ -120,6 +180,7 @@ function DetailPage() {
                   width="25px"
                   viewBox="0 0 20 20"
                   fill="#fff"
+                  onClick={() => scroll(githubPagesRef, 300)}
                 >
                   <path
                     fill-rule="evenodd"
@@ -131,7 +192,23 @@ function DetailPage() {
             </div>
             <h4>Useful Websites</h4>
             <div className="scroller">
-              <ul>
+              <span className="LeftArrow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  width="25px"
+                  viewBox="0 0 20 20"
+                  fill="#fff"
+                  onClick={() => scroll(usefulWebsiteRef, -300)}
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+              <ul ref={usefulWebsiteRef}>
                 {Websites.map((value, index) => {
                   return <LinkPreview url={value} />;
                 })}
@@ -143,6 +220,7 @@ function DetailPage() {
                   width="25px"
                   viewBox="0 0 20 20"
                   fill="#fff"
+                  onClick={() => scroll(usefulWebsiteRef, 300)}
                 >
                   <path
                     fill-rule="evenodd"
@@ -154,7 +232,23 @@ function DetailPage() {
             </div>
             <h4>Tips/Hacks</h4>
             <div className="scroller">
-              <ul>
+              <span className="LeftArrow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="25px"
+                  width="25px"
+                  viewBox="0 0 20 20"
+                  fill="#fff"
+                  onClick={() => scroll(tipsNHacksRef, -300)}
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+              <ul ref={tipsNHacksRef}>
                 {Tips.map((value, index) => {
                   return <LinkPreview url={value} />;
                 })}
@@ -166,6 +260,7 @@ function DetailPage() {
                   width="25px"
                   viewBox="0 0 20 20"
                   fill="#fff"
+                  onClick={() => scroll(tipsNHacksRef, 300)}
                 >
                   <path
                     fill-rule="evenodd"
