@@ -48,7 +48,7 @@
     .row1 {
         color: colors.$white;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
         position: relative;
         margin: 50px;
@@ -63,7 +63,7 @@
             width: 200px;
             font-family: 'Work Sans', bold;
             transform: translateY(-14px);
-            @media (max-width: 660px) {
+            @media (max-width: 781px) {
                 width: 100%;
             }
             .top {
@@ -99,6 +99,9 @@
         }
         .col2 {
             display: flex;
+            border-left: 1px dotted wheat;
+            width: 800px;
+            justify-content: space-around;
         }
         .subColumn {
             display: flex;
@@ -158,12 +161,38 @@
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1200px) {
     .footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        .row1 {
+            .col2 {
+                display: flex;
+                border-left: 1px dotted wheat;
+                width: 600px;
+                justify-content: space-around;
+            }
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    .footer {
+        .row1 {
+            .col2 {
+                display: flex;
+                border-left: 1px dotted wheat;
+                width: 450px;
+                justify-content: space-around;
+            }
+        }
+    }
+}
+@media screen and (max-width: 782px) {
+    .footer {
+        .row1 {
+            .col2 {
+                display: flex;
+                border-left: 0;
+                width: 0;
+            }
+        }
     }
 }
