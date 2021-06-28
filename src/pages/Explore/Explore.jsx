@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "left",
     color: "white",
     background: "#1C1C1C",
-    border: "1px solid rgba(255, 255, 255, 0.12)",
+    border: "1px solid rgba(0, 0, 0, 0.2)",
     display: "grid",
     justifyItems: "flex-start",
     alignItems: "center",
@@ -27,8 +27,7 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: 35,
     overflow: "hidden",
             '&:hover': {
-            background: "#1a1a1a",
-            border: "1px solid rgba(255, 255, 255, 0.22)",
+            background: "#1a1a1a"
             
         },
   },

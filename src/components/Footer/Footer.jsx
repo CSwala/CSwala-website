@@ -41,7 +41,7 @@ export default function Footer(props) {
                             />
                         </a>
                         <a
-                            href="https://discord.gg/yBDP4C2DAq"
+                            href="https://discord.com/invite/rAz3Eb8fsN"
                             className={styles.discordIcon}
                         >
                             <FontAwesomeIcon
