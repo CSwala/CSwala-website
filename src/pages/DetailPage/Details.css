@@ -1,0 +1,100 @@
+.root {
+  flex-grow: 1;
+  background: #222222;
+  color: #fff;
+  font-family: "Work Sans", bold;
+}
+a {
+  text-decoration: none;
+}
+.scroller {
+  position: relative;
+}
+.card_wrapper {
+  margin: 50px;
+  margin-top: 20px;
+  text-align: left;
+}
+.card_wrapper h2 {
+  margin-bottom: 0;
+}
+.cardData ul {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  gap: 12px;
+  padding: 10px 0;
+  text-decoration: none;
+  list-style: none;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.cardData ul::-webkit-scrollbar {
+  display: none;
+}
+
+.cardData img {
+  max-height: 480px;
+  width: 100%;
+}
+.cardTitle {
+  width: 100%;
+  max-width: 1140px;
+  background: #1c1c1c;
+  color: #bababa;
+  padding: 24px;
+  border-radius: 8px;
+}
+.cardTitle h2 {
+  font-family: "Work Sans", bold;
+  color: #fbb03b;
+  font-size: 54px;
+  margin-bottom: 0.5rem;
+}
+.cardTitle a {
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Work Sans", bold;
+  font-weight: 600;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.RightArrow {
+  position: absolute;
+  right: -50px;
+  background: rgba(255, 255, 255, 0.123);
+  opacity: 0.4;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.LeftArrow {
+  position: absolute;
+  left: -50px;
+  background: rgba(255, 255, 255, 0.123);
+  opacity: 0.4;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cardTitle a:hover {
+  background: #fbb03b;
+  color: #1c1c1c;
+}
+.cardData {
+  margin: 60px 0;
+}
+.cardData h4 {
+  font-weight: bold;
+  color: #bababa;
+  font-family: "Work Sans", bold;
+}
+@media only screen and (max-width: 768px) {
+  .card_wrapper {
+    margin: 50px 16px;
+  }
+}

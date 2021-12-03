@@ -1,0 +1,4 @@
+this folder contains the gif, svg, jpg, png, etc related to the Banner Section of Home page.
+
+
+delete this info.txt after adding the images
