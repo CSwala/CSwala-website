@@ -2,6 +2,12 @@ import React, { useEffect, useState } from "react";
 import style from "./explore.module.scss";
 import MetaComponent from "../../seo/MetaComponent";
 import metaData from "../../seo/metaData";
+import PropTypes from "prop-types";
+import Zoom from "@material-ui/core/Zoom";
+import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
+import useScrollTrigger from "@material-ui/core/useScrollTrigger";
+import Fab from "@material-ui/core/Fab";
+import Toolbar from "@material-ui/core/Toolbar";
 
 import {
   Paper,
@@ -14,6 +20,11 @@ import {
 } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    position: "fixed",
+    bottom: theme.spacing(2),
+    right: theme.spacing(2)
+  },
   paper: {
     padding: theme.spacing(2),
     textAlign: "left",
@@ -26,10 +37,13 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: 35,
     paddingRight: 35,
     overflow: "hidden",
-            '&:hover': {
-            background: "#1a1a1a"
-            
-        },
+    "&:hover": {
+      // background: "#fbb03b;",
+      border: "1px solid #fbb03b",
+      borderBottomLeftRadius: "25px",
+      transform: "scale(1.1)",
+      overlap: "hidden",
+    },
   },
   subtitle: {
     lineHeight: 1.4,
@@ -51,6 +65,38 @@ const useStyles = makeStyles((theme) => ({
     wordBreak: "break-all",
   },
 }));
+function ScrollTop(props) {
+  const { children } = props;
+  const classes = useStyles();
+  const trigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 100,
+  });
+
+  const handleClick = (event) => {
+    const anchor = (event.target.ownerDocument || document).querySelector(
+      "#back-to-top-anchor"
+    );
+
+    if (anchor) {
+      anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
+
+  return (
+    <Zoom in={trigger}>
+      <div onClick={handleClick} role="presentation" className={classes.root}>
+        {children}
+      </div>
+    </Zoom>
+  );
+}
+
+ScrollTop.propTypes = {
+  children: PropTypes.element.isRequired,
+};
+
+
 
 function Explore() {
   const classes = useStyles();
@@ -95,6 +141,7 @@ function Explore() {
         description={metaData.explore.description}
         keywords={metaData.explore.keywords}
       />
+      <Toolbar id="back-to-top-anchor" style={{minHeight:0,paddingTop:"-20px"}} />
       <Box py={6} px={3}>
         <Grid container>
           <Grid item xs={0} sm={1}></Grid>
@@ -112,7 +159,8 @@ function Explore() {
                       >
                         <a
                           href={
-                            "/e/" + cardInfo.title.replace(" ", "-").toLowerCase()
+                            "/e/" +
+                            cardInfo.title.replace(" ", "-").toLowerCase()
                           }
                         >
                           <Paper className={classes.paper} elevation={3}>
@@ -149,6 +197,11 @@ function Explore() {
           <Grid item xs={0} sm={1}></Grid>
         </Grid>
       </Box>
+      <ScrollTop>
+        <Fab style={{backgroundColor: '#fbb03b'}} size="small" aria-label="scroll back to top">
+          <KeyboardArrowUpIcon />
+        </Fab>
+      </ScrollTop>
     </div>
   );
 }
