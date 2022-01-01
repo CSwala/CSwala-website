@@ -5,6 +5,11 @@ const data = {
       "An organization to Educate people about the right style of getting educated!",
     keywords: "CSwaala, home, student, education",
   },
+  about: {
+    title: "About | CSwaala",
+    description: "Get to know more about us",
+    keywords: "About, CSwaala, home, student, education",
+  },
   notFound: {
     title: "404 | CSwaala",
     description: "Uh ohh Looks like you encountered a 404 Not Found error.",
