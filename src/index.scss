@@ -27,3 +27,11 @@ body {
   font-family: 'Work Sans', sans-serif;
   background-color: colors.$backgroundDark;
 }
+
+.fade-navbar{
+  opacity: 0.85;
+
+  .header_li__h9cJS{
+    color: white !important;
+  }
+}

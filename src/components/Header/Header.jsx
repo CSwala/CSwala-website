@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styles from "./header.module.scss";
 import Logo from "./../../assets/_logo/logo.png";
@@ -18,6 +18,29 @@ function Header(props) {
   const header = useRef(null);
 
   const [loggedin, setLoggedin] = useState(false);
+  const [scrollState, setScrollState] = useState("top");
+
+  let listener = null;
+
+  useEffect(() => {
+    listener = document.addEventListener("scroll", e => {
+      var scrolled = document.scrollingElement.scrollTop;
+      if (scrolled >= 150) {
+        if (scrollState !== "normal") {
+          setScrollState("normal");
+          document.getElementsByClassName('header_header__o73SE')[0].classList.add('fade-navbar');
+        }
+      } else {
+        if (scrollState !== "top") {
+          setScrollState("top");
+          document.getElementsByClassName('header_header__o73SE')[0].classList.remove('fade-navbar');
+        }
+      }
+    })
+    return () => {
+      document.removeEventListener("scroll", listener)
+    }
+  }, [scrollState])
 
   const pages = ["Home", "Explore", "Job Hunt", "Hack Feed", "Sign in"];
   //const paths = ["/", "/explore", "/jobs", "/feed", "/signin"];
