@@ -9,6 +9,7 @@ import "./index.scss";
 import Preloader from "./components/Preloader/Preloader";
 
 const Home = lazy(() => import("./pages/Home/Home"));
+const About = lazy(() => import("./pages/About/About"));
 const Explore = lazy(() => import("./pages/Explore/Explore"));
 const DetailPage = lazy(() => import("./pages/DetailPage/DetailPage"));
 const ContactUs = lazy(() => import("./pages/ContactUs/ContactUs"));
@@ -24,6 +25,7 @@ function App({ location }) {
       )}
       <Switch>
         <Route path="/" exact component={Home} />
+        <Route path="/about" exact component={About} />
         <Route path="/contact" exact component={ContactUs} />
         <Route path="/explore" exact component={Explore} />
         <Route path="/e/:slug" exact component={DetailPage} />
