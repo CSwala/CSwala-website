@@ -76,7 +76,7 @@ export default function Footer(props) {
         <p className={styles.footerText}>
           <a href="/#">Privacy Policy</a> &nbsp; | &nbsp;
           <a href="/#">Site Map</a>&nbsp; | &nbsp;
-          <a href="/#">Report a bug</a>
+          <a href="/Report">Report a bug</a>
         </p>
       </div>
     </footer>

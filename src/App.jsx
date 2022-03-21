@@ -15,6 +15,7 @@ const ContactUs = lazy(() => import("./pages/ContactUs/ContactUs"));
 const Login = lazy(() => import("./pages/Login/Login"));
 const Forget = lazy(() => import("./pages/ForgetPassword/Forget"));
 const Reset = lazy(() => import("./pages/ResetPassword/Reset"));
+const Report = lazy(() => import("./pages/ReportaBug/Report"));
 
 function App({ location }) {
   return (
@@ -32,6 +33,7 @@ function App({ location }) {
         <Route path="/signin" exact component={Login} />
         <Route path="/forget" component={Forget} />
         <Route path="/reset" component={Reset} />
+        <Route path="/report" component={Report} />
         <Route path="/404" exact component={NotFound} />
         <Redirect to="/404" />
       </Switch>
