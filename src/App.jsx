@@ -16,10 +16,7 @@ const Login = lazy(() => import("./pages/Login/Login"));
 const Forget = lazy(() => import("./pages/ForgetPassword/Forget"));
 const Reset = lazy(() => import("./pages/ResetPassword/Reset"));
 const Report = lazy(() => import("./pages/ReportaBug/Report"));
-<<<<<<< HEAD
 const Signup = lazy(() => import("./pages/SignupPage/Signup"));
-=======
->>>>>>> b741086ebca85771159215f8b7969cbaf0628d32
 
 function App({ location }) {
   return (
