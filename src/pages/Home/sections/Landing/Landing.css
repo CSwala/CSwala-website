@@ -23,6 +23,7 @@
 #hero h1 span {
   border-bottom: 4px solid #FBB03B;
   font-size: 60px;
+  line-height: 60px;
 }
 
 #hero h1 span:hover{
@@ -34,6 +35,7 @@
 #hero h2 {
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 40px;
+  margin-top: 40px;
   font-size: 20px;
   font-weight: 400;
   font-family: "Work Sans", bold;
@@ -95,6 +97,7 @@
     margin-bottom: 30px;
   }
 }
+
 
 @media (max-width: 575px) {
   #hero .hero-img img {

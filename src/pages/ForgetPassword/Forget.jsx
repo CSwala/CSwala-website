@@ -25,6 +25,7 @@ const Forget = () => {
                 type="email"
                 placeholder="name@example.com"
                 className="input"
+                required
               ></input>
             </div>
           </div>
