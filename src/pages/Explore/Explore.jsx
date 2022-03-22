@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import style from "./explore.module.scss";
 import MetaComponent from "../../seo/MetaComponent";
 import metaData from "../../seo/metaData";
+import Filter from "./Filter/Filter";
 
 import {
   Paper,
@@ -26,10 +27,9 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: 35,
     paddingRight: 35,
     overflow: "hidden",
-            '&:hover': {
-            background: "#1a1a1a"
-            
-        },
+    "&:hover": {
+      background: "#1a1a1a",
+    },
   },
   subtitle: {
     lineHeight: 1.4,
@@ -88,6 +88,43 @@ function Explore() {
     }
   }, [data]);
 
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [isPageLoaded, setIsPageLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
+  useEffect(() => {
+    if (isLoaded) {
+      setIsPageLoaded(true);
+    }
+  }, [isLoaded]);
+
+  const [tagSelcted, setTagSelected] = useState("");
+  const SetTag = (Tag) => {
+    setTagSelected(Tag);
+  };
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
+  useEffect(() => {
+    if (isLoaded) {
+      setIsPageLoaded(true);
+      setTagSelected("ALL");
+    }
+  }, [isLoaded]);
+
+  let filterCourse = storedData;
+  if (tagSelcted !== "ALL") {
+    filterCourse = storedData.filter(function (result) {
+      return (
+        tagSelcted === result.tag.toUpperCase() ||
+        tagSelcted === result.title.toUpperCase()
+      );
+    });
+  }
   return (
     <div className={style.root}>
       <MetaComponent
@@ -96,12 +133,13 @@ function Explore() {
         keywords={metaData.explore.keywords}
       />
       <Box py={6} px={3}>
+        <Filter storedData={storedData} parentCall={SetTag} />
         <Grid container>
           <Grid item xs={0} sm={1}></Grid>
           <Grid item xs={12} sm={10}>
             <Grid container spacing={2}>
-              {storedData &&
-                storedData.map((cardInfo, index) => {
+              {filterCourse &&
+                filterCourse.map((cardInfo, index) => {
                   return (
                     <Grid key={`card-${index}`} item xs={6} md={4} lg={3}>
                       <Box
@@ -112,7 +150,8 @@ function Explore() {
                       >
                         <a
                           href={
-                            "/e/" + cardInfo.title.replace(" ", "-").toLowerCase()
+                            "/e/" +
+                            cardInfo.title.replace(" ", "-").toLowerCase()
                           }
                         >
                           <Paper className={classes.paper} elevation={3}>
