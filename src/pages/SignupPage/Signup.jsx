@@ -28,6 +28,7 @@ export default function Signup() {
                                 type="text"
                                 placeholder="Full Name"
                                 className="input"
+                                required
                             ></input>
                         </div>
                     </div>
@@ -41,6 +42,7 @@ export default function Signup() {
                                 type="text"
                                 placeholder="Username"
                                 className="input"
+                                required
                             ></input>
                         </div>
                     </div>
@@ -54,6 +56,7 @@ export default function Signup() {
                                 type="password"
                                 placeholder="Password"
                                 className="input"
+                                required
                             ></input>
                         </div>
                     </div>
