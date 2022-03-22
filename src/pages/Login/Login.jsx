@@ -28,6 +28,7 @@ export default function Login() {
                                 type="text"
                                 placeholder="Username"
                                 className="input"
+                                required
                             ></input>
                         </div>
                     </div>
@@ -41,6 +42,7 @@ export default function Login() {
                                 type="password"
                                 placeholder="Password"
                                 className="input"
+                                required
                             ></input>
                         </div>
                     </div>

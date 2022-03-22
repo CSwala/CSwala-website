@@ -22,6 +22,7 @@ const Reset = () => (
                             type="password"
                             placeholder="New Password"
                             className="input"
+                            required
                         ></input>
                     </div>
                 </div>
@@ -34,6 +35,7 @@ const Reset = () => (
                             type="password"
                             placeholder="Confirm Password"
                             className="input"
+                            required
                         ></input>
                     </div>
                 </div>
