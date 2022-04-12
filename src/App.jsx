@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import NotFound from "./pages/404/NotFound";
 import "./index.scss";
 import Preloader from "./components/Preloader/Preloader";
+import Scroll from "./components/Scroll/Scroll";
 
 const Home = lazy(() => import("./pages/Home/Home"));
 const Explore = lazy(() => import("./pages/Explore/Explore"));
@@ -17,13 +18,13 @@ const Forget = lazy(() => import("./pages/ForgetPassword/Forget"));
 const Reset = lazy(() => import("./pages/ResetPassword/Reset"));
 const Report = lazy(() => import("./pages/ReportaBug/Report"));
 const Signup = lazy(() => import("./pages/SignupPage/Signup"));
-
 function App({ location }) {
   return (
     <Suspense fallback={<Preloader />}>
       {location.pathname !== "/404" && (
         <Header currentRoute={location.pathname} />
       )}
+      <Scroll showBelow={200} />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/contact" exact component={ContactUs} />
@@ -37,6 +38,7 @@ function App({ location }) {
         <Route path="/reset" component={Reset} />
         <Route path="/report" component={Report} />
         <Route path="/404" exact component={NotFound} />
+
         <Redirect to="/404" />
       </Switch>
       {location.pathname !== "/404" && <Footer fill={"#0D1017"} />}
