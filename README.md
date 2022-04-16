@@ -41,27 +41,35 @@ git clone hhttps://github.com/<your-github-uername>/CSwala-website
 ```bash
 git remote add upstream https://github.com/CSwala/CSwala-website.git
 ```
+**4.** Install the dependencies
+```bash
+npm install
+```
+**5.** Run the application
+```bash
+npm Start
+```
 
-**4.** Navigate to the new project directory:
+**6.** Navigate to the new project directory:
 
 ```bash
 cd CSwala-website
 ```
 
-**5.** Create a new branch:
+**7.** Create a new branch:
 
 ```bash
 git checkout -b YourBranchName
 ```
 
-**6.** Sync your fork or local repository with the origin repository:
+**8.** Sync your fork or local repository with the origin repository:
 
 - In your forked repository click on "Fetch upstream"
 - Click "Fetch and merge".
 
-**7.** Make your changes to the source code.
+**9.** Make your changes to the source code.
 
-**8.** Stage your changes and commit:
+**10.** Stage your changes and commit:
 
 ```bash
 git add .
@@ -71,15 +79,15 @@ git add .
 git commit -m "<your_commit_message>"
 ```
 
-**9.** Push your local commits to the remote repository:
+**11.** Push your local commits to the remote repository:
 
 ```bash
 git push origin YourBranchName
 ```
 
-**10.** Create a PR!
+**12.** Create a PR!
 
-**11.** **Congratulations!** You've made your first contribution! 🙌🏼
+**13.** **Congratulations!** You've made your first contribution! 🙌🏼
 
 
 ## 💥 Issues
@@ -136,3 +144,4 @@ This project follows the [MIT License](https://choosealicense.com/licenses/mit/)
 <br> 
 
 ## If you liked the project don't forget to 🌟 and 🍽 the project.
+
