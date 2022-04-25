@@ -1,15 +1,25 @@
-import React from "react";
+import React,{useState} from "react";
 import "font-awesome/css/font-awesome.min.css";
 import "./reset.css";
 import resetIllustration from "../../assets/reset-pass/reset.svg";
 
-const Reset = () => (
+function Reset() {
+    const [pwd, setPwd] = useState("");
+    const [cpwd, setCpwd] = useState("");
+    const[error,setError] = useState(false)
+    const submitHandler = async (e) => {
+        if(pwd!==cpwd) {
+            e.preventDefault();
+            setError(true);
+        } 
+    }
+    return (
     <div className="container-ctm-reset container">
         <div className="illustration_img">
-            <img src={resetIllustration} width="500px" height="500px"></img>
+            <img src={resetIllustration} width="500px" height="500px" alt="reset"></img>
         </div>
         <div className="reset-content">
-            <form action="/reset">
+            <form onSubmit={submitHandler} action="/reset">
                 <h1 style={{ fontSize: "30px" }} className="title">
                     Reset Password
                 </h1>
@@ -23,6 +33,8 @@ const Reset = () => (
                             placeholder="New Password"
                             className="input"
                             required
+                            value={pwd}
+                            onChange={(e) =>setPwd(e.target.value)}
                         ></input>
                     </div>
                 </div>
@@ -36,9 +48,12 @@ const Reset = () => (
                             placeholder="Confirm Password"
                             className="input"
                             required
+                            value={cpwd}
+                            onChange={(e) =>setCpwd(e.target.value)}
                         ></input>
                     </div>
                 </div>
+                {error && <span>Passwords don't match</span>}
                 <div className="submitbutton">
                     <input type="submit" className="btn" value="Submit"></input>
                 </div>
@@ -46,5 +61,5 @@ const Reset = () => (
         </div>
     </div>
 );
-
+    }
 export default Reset;
