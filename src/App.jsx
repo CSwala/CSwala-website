@@ -22,13 +22,13 @@ const Signup = lazy(() => import("./pages/SignupPage/Signup"));
 function App({ location }) {
 
   const [userLoggedIn, setUserLoggedIn] = useState(true);
-  const [data, setData] = useState();
+  
  authentication.onAuthStateChanged((user)=> {
    if(user){
      return setUserLoggedIn(true);
    }
    setUserLoggedIn(false);
-   setData("fuck")
+   
  })
 
   if(userLoggedIn === true){
@@ -37,7 +37,7 @@ function App({ location }) {
       
       <Suspense fallback={<Preloader />}>
         {location.pathname !== "/404" && (
-          <Header data={data} currentRoute={location.pathname} />
+          <Header  currentRoute={location.pathname} />
         )}
         <Scroll showBelow={200} />
         <Switch>
