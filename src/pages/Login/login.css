@@ -248,3 +248,40 @@ a:hover {
         box-shadow: none;
     }
 }
+
+
+#googlebutton{
+    padding: 1em 2em;
+    border-radius: 100px;
+    border: none;
+    background-color: #24a0ed;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+#githubbutton{
+    padding: 1em 2em;
+    border-radius: 100px;
+    border: none;
+    background-color: #24a0ed;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.authBtns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 1em;
+}
+
+.icon{
+    transform: scale(1.2);
+}
