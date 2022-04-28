@@ -27,3 +27,21 @@ body {
   font-family: 'Work Sans', sans-serif;
   background-color: colors.$backgroundDark;
 }
+
+
+::-webkit-scrollbar{
+  width: 20px;
+}
+
+::-webkit-scrollbar-track{
+  background: grey;
+}
+
+::-webkit-scrollbar-thumb{
+  background-image: yellow;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-image:  rgb(231, 96, 12);
+}

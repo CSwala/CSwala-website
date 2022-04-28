@@ -22,6 +22,7 @@ const Report = () => (
                             type="textarea"
                             placeholder="Name"
                             className="input"
+                            required
                         ></input>
                     </div>
                 </div>
@@ -34,6 +35,7 @@ const Report = () => (
                             type="text"
                             placeholder="Your Bug description!"
                             className="input"
+                            required
                         ></input>
                     </div>
                 </div>

@@ -2,8 +2,26 @@ import React from 'react';
 import 'font-awesome/css/font-awesome.min.css';
 import './login.css';
 import loginIllustartion from '../../assets/socialmedia/login.png';
-
+import { authentication } from '../../firebase-config';
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import {ImGoogle} from "react-icons/im"
+import {ImGithub} from "react-icons/im"
 export default function Login() {
+
+
+    const handleGoogleLogin = () => {
+        const provider = new GoogleAuthProvider();
+        signInWithPopup(authentication, provider)
+        .then((res) => {
+            console.log(res);
+        })
+        .catch((err)=>{
+            console.log(err);
+        })
+    }
+
+
+
     return (
         <div className="container-ctm-login container">
             <div className="illustration_img">
@@ -28,6 +46,7 @@ export default function Login() {
                                 type="text"
                                 placeholder="Username"
                                 className="input"
+                                required
                             ></input>
                         </div>
                     </div>
@@ -41,6 +60,7 @@ export default function Login() {
                                 type="password"
                                 placeholder="Password"
                                 className="input"
+                                required
                             ></input>
                         </div>
                     </div>
@@ -61,10 +81,15 @@ export default function Login() {
                         <a href="/signup"> Create your account! </a>
                     </div>
 
-                    <div className="icons">
-                        <a href="#" id="facebookIcon"></a>
-                        <a href="#" id="twitterIcon"></a>
-                        <a href="#" id="googleIcon"></a>
+                    <div className="authBtns">
+                        <button id="googlebutton" onClick={handleGoogleLogin}>
+                            <ImGoogle className='icon' /> 
+                            Continue with Google
+                        </button>
+                        <button id="githubbutton" >
+                            <ImGithub className='icon' /> 
+                            Continue with Github
+                        </button>
                     </div>
                 </form>
             </div>
