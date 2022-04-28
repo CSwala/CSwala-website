@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import styles from "./header.module.scss";
 import Logo from "./../../assets/_logo/logo.png";
 import { AccountCircle, Add, ExitToApp, Settings } from "@material-ui/icons";
-import { authentication } from "../../firebase-config";
 import {
   IconButton,
   makeStyles,
@@ -15,14 +14,6 @@ import {
 } from "@material-ui/core";
 
 function Header(props) {
-
-  
-
-  
-  
-  
-
-
   const { currentRoute } = props;
   const header = useRef(null);
 
@@ -204,7 +195,7 @@ function Header(props) {
               to={"/signin"}
               onClick={() => setLoggedin(true)}
             >
-              Signin
+              Sign in
             </Link>
           )}
         </div>
