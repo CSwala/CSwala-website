@@ -2,12 +2,27 @@ import React from 'react';
 import 'font-awesome/css/font-awesome.min.css';
 import './login.css';
 import loginIllustartion from '../../assets/socialmedia/login.png';
-
+import { authentication } from '../../firebase-config';
+import { signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 export default function Login() {
+
+
+
+    const handleGoogleLogin = () => {
+        const provider = new GoogleAuthProvider();
+        signInWithPopup(authentication, provider)
+        .then((res) => {
+            console.log(res);
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+    }
+
     return (
         <div className="container-ctm-login container">
             <div className="illustration_img">
-                <img src={loginIllustartion}></img>
+                <img src={loginIllustartion} alt="bannerimg"></img>
             </div>
             <div className="login-content">
                 <form>
@@ -64,9 +79,13 @@ export default function Login() {
                     </div>
 
                     <div className="icons">
-                        <a href="#" id="facebookIcon"></a>
-                        <a href="#" id="twitterIcon"></a>
-                        <a href="#" id="googleIcon"></a>
+                        {/* <button className='googleAuthButton' >Google</button> */}
+                        <div class="google-btn" onClick={handleGoogleLogin}>
+                            <div class="google-icon-wrapper">
+                                <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="googlebtn"/>
+                            </div>
+                            <p class="btn-text"><b>Sign in with google</b></p>
+                        </div>
                     </div>
                 </form>
             </div>
