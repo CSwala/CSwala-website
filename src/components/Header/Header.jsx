@@ -51,7 +51,12 @@ function Header(props) {
     username:{
       color:"#fff"
     },
-    
+    signinbutton: {
+        width:"7em",
+        height:"2em",
+        border:"none"
+
+    },
     button__wrapper:{
         padding:"0 2em"
     
@@ -77,6 +82,16 @@ function Header(props) {
     },
     actions: {
       padding: "10px 0px",
+    },
+    userContainer:{
+        display:"flex",
+        justifyContent:"center",
+        alignItems:"center",
+        gap:".5em"
+    },
+    userAvatar:{
+        width:"2em",
+        borderRadius:"100%"
     },
     link: {
       textDecoration: "none",
@@ -153,13 +168,16 @@ function Header(props) {
 
       <div className={classes.button__wrapper}>
           {props.onUserLogin? (
-            <h4 className={classes.username} >{props.userName}</h4>
+            <div className={classes.userContainer}>
+              <img className={classes.userAvatar} src={props.avatar} alt="profilephoto" />
+              <h4 className={classes.username} >{props.userName}</h4>
+            </div>
           ) : (
             <Link
                 className={styles.li}
                 to={"/signin"}
               >
-                Sign in
+                <button className={classes.signinbutton}>Sign In</button>
             </Link>
           )}
       </div>

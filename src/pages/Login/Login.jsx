@@ -23,7 +23,7 @@ export default function Login() {
         const provider = new GithubAuthProvider();
         signInWithPopup(authentication, provider)
         .then((res) => {
-            console.log(res);
+            console.log(res.user);
         })
         .catch((err) => {
             console.log(err);

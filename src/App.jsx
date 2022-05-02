@@ -23,10 +23,12 @@ function App({ location }) {
 
   const [onUserLogin, setOnUserLogin] = useState(true);
   const [userName, setUserName] = useState("");
+  const [avatar, setAvatar] = useState("");
   useEffect(()=>{
     onAuthStateChanged(authentication, (user) => {
       if(user){
-        console.log(user.displayName)
+        console.log(user.photoURL)
+        setAvatar(user.photoURL);
         setUserName(user.displayName);
        return  setOnUserLogin(true);
       }
@@ -41,7 +43,7 @@ function App({ location }) {
     return (
       <Suspense fallback={<Preloader />}>
         {location.pathname !== "/404" && (
-          <Header onUserLogin={onUserLogin} userName = {userName} currentRoute={location.pathname} />
+          <Header onUserLogin={onUserLogin} userName = {userName} avatar={avatar} currentRoute={location.pathname} />
         )}
         <Scroll showBelow={200} />
         <Switch>
@@ -66,7 +68,7 @@ function App({ location }) {
     return (
       <Suspense fallback={<Preloader />}>
         {location.pathname !== "/404" && (
-          <Header onUserLogin={onUserLogin} userName = {userName} currentRoute={location.pathname} />
+          <Header onUserLogin={onUserLogin} userName = {userName} avatar={avatar} currentRoute={location.pathname} />
         )}
         <Scroll showBelow={200} />
         <Switch>
