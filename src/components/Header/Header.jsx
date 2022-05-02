@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./header.module.scss";
 import Logo from "./../../assets/_logo/logo.png";
@@ -16,11 +16,9 @@ import {
 function Header(props) {
   const { currentRoute } = props;
   const header = useRef(null);
+  
 
-  const [loggedin, setLoggedin] = useState(false);
-  //const pages = ["Home", "Explore", "Jobhunt", "Hackfeed", ""];
   const pages = ["Home", "Explore", "", "", ""];
-  //const paths = ["/", "/explore", "/jobs", "/feed", "/signin"];
   const paths = ["/", "/explore", "/explore", "/explore", ""];
 
   let currentPage;
@@ -49,6 +47,14 @@ function Header(props) {
       "&:hover": {
         backgroundColor: "rgba(255, 255, 255, 0.06)",
       },
+    },
+    username:{
+      color:"#fff"
+    },
+    
+    button__wrapper:{
+        padding:"0 2em"
+    
     },
     root: {
       cursor: "default",
@@ -92,6 +98,7 @@ function Header(props) {
   return (
     <>
       <header ref={header} className={styles.header}>
+      
         <div className={styles.hamburger} onClick={toggleNav}>
           <span className={`${styles.bar} ${styles.topBar}`}></span>
           <span className={`${styles.bar} ${styles.middleBar}`}></span>
@@ -143,7 +150,22 @@ function Header(props) {
             })}
           </div>
         </div>
-        <div className={`${styles.list} ${styles.right}`}>
+
+      <div className={classes.button__wrapper}>
+          {props.onUserLogin? (
+            <h4 className={classes.username} >{props.userName}</h4>
+          ) : (
+            <Link
+                className={styles.li}
+                to={"/signin"}
+              >
+                Sign in
+            </Link>
+          )}
+      </div>
+       
+        {/* <div className={`${styles.list} ${styles.right}`}>
+
           {loggedin ? (
             <>
               <IconButton size="small" color="primary" className={classes.icon}>
@@ -198,7 +220,7 @@ function Header(props) {
               Sign in
             </Link>
           )}
-        </div>
+        </div> */}
       </header>
       <div className={styles.spacer}></div>
     </>
