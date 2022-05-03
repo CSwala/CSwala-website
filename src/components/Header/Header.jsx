@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./header.module.scss";
 import Logo from "./../../assets/_logo/logo.png";
@@ -16,11 +16,9 @@ import {
 function Header(props) {
   const { currentRoute } = props;
   const header = useRef(null);
+  
 
-  const [loggedin, setLoggedin] = useState(false);
-  //const pages = ["Home", "Explore", "Jobhunt", "Hackfeed", ""];
   const pages = ["Home", "Explore", "", "", ""];
-  //const paths = ["/", "/explore", "/jobs", "/feed", "/signin"];
   const paths = ["/", "/explore", "/explore", "/explore", ""];
 
   let currentPage;
@@ -50,6 +48,19 @@ function Header(props) {
         backgroundColor: "rgba(255, 255, 255, 0.06)",
       },
     },
+    username:{
+      color:"#fff"
+    },
+    signinbutton: {
+        width:"7em",
+        height:"2em",
+        border:"none"
+
+    },
+    button__wrapper:{
+        padding:"0 2em"
+    
+    },
     root: {
       cursor: "default",
       minWidth: 150,
@@ -72,6 +83,16 @@ function Header(props) {
     actions: {
       padding: "10px 0px",
     },
+    userContainer:{
+        display:"flex",
+        justifyContent:"center",
+        alignItems:"center",
+        gap:".5em"
+    },
+    userAvatar:{
+        width:"2em",
+        borderRadius:"100%"
+    },
     link: {
       textDecoration: "none",
       color: "inherit",
@@ -92,6 +113,7 @@ function Header(props) {
   return (
     <>
       <header ref={header} className={styles.header}>
+      
         <div className={styles.hamburger} onClick={toggleNav}>
           <span className={`${styles.bar} ${styles.topBar}`}></span>
           <span className={`${styles.bar} ${styles.middleBar}`}></span>
@@ -143,7 +165,25 @@ function Header(props) {
             })}
           </div>
         </div>
-        <div className={`${styles.list} ${styles.right}`}>
+
+      <div className={classes.button__wrapper}>
+          {props.onUserLogin? (
+            <div className={classes.userContainer}>
+              <img className={classes.userAvatar} src={props.avatar} alt="profilephoto" />
+              <h4 className={classes.username} >{props.userName}</h4>
+            </div>
+          ) : (
+            <Link
+                className={styles.li}
+                to={"/signin"}
+              >
+                <button className={classes.signinbutton}>Sign In</button>
+            </Link>
+          )}
+      </div>
+       
+        {/* <div className={`${styles.list} ${styles.right}`}>
+
           {loggedin ? (
             <>
               <IconButton size="small" color="primary" className={classes.icon}>
@@ -198,7 +238,7 @@ function Header(props) {
               Sign in
             </Link>
           )}
-        </div>
+        </div> */}
       </header>
       <div className={styles.spacer}></div>
     </>

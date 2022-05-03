@@ -146,9 +146,11 @@ a {
 
 .icons {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 30px;
+    gap: 1em;
 }
 
 #facebookIcon {
@@ -294,3 +296,49 @@ a:hover {
 .google-btn:active {
     background:#1669F2;
 }
+
+
+
+.github-btn {
+    width: 195px;
+    height: 42px;
+    background-color: #333;
+    border-radius: 2px;
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+    cursor: pointer;
+  }
+
+.github-icon-wrapper {
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+
+.github-icon {
+    position: absolute;
+    margin-top: 11px;
+    margin-left: -7px;
+    width: 18px;
+    height: 18px;
+  }
+  
+.btn-text {
+    float: right;
+    margin: 11px 11px 0 0;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    font-family: "Poppins";
+  }
+.github-btn :hover{
+    box-shadow: 0 0 6px #333;
+}
+
+.github-btn:active {
+    background:#333;
+}
+
