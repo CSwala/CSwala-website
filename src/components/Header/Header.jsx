@@ -18,6 +18,10 @@ function Header(props) {
   const header = useRef(null);
   
 
+
+  const [loggedin, setLoggedin] = useState(false);
+  //const pages = ["Home", "Explore", "JobHunt", "HackFeed", "SignIn"];
+
   const pages = ["Home", "Explore", "", "", ""];
   const paths = ["/", "/explore", "/explore", "/explore", ""];
 
