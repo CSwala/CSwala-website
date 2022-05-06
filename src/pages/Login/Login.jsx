@@ -3,7 +3,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import './login.css';
 import loginIllustartion from '../../assets/socialmedia/login.png';
 import { authentication } from '../../firebase-config';
-import { signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
+import { signInWithPopup, GoogleAuthProvider, GithubAuthProvider } from 'firebase/auth';
 export default function Login() {
 
 
@@ -13,6 +13,17 @@ export default function Login() {
         signInWithPopup(authentication, provider)
         .then((res) => {
             console.log(res);
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+    }
+
+    const handleGithubLogin = () => {
+        const provider = new GithubAuthProvider();
+        signInWithPopup(authentication, provider)
+        .then((res) => {
+            console.log(res.user);
         })
         .catch((err) => {
             console.log(err);
@@ -85,6 +96,13 @@ export default function Login() {
                                 <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="googlebtn"/>
                             </div>
                             <p class="btn-text"><b>Sign in with google</b></p>
+                        </div>
+
+                        <div class="github-btn" onClick={handleGithubLogin}>
+                            <div class="github-icon-wrapper">
+                                <img class="github-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/GitHub_Mark.png/640px-GitHub_Mark.png" alt="githubbtn"/>
+                            </div>
+                            <p class="btn-text"><b>Sign in with github</b></p>
                         </div>
                     </div>
                 </form>
