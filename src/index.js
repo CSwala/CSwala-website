@@ -5,11 +5,15 @@ import { BrowserRouter } from "react-router-dom";
 import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import {UserContextProvider} from "./context/userContext"
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
-  </BrowserRouter>,
+    <UserContextProvider>
+      <App />
+    </UserContextProvider>
+  </BrowserRouter>
+  ,
   document.getElementById("root")
 );
 
