@@ -1,11 +1,16 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import 'font-awesome/css/font-awesome.min.css';
 import './login.css';
 import loginIllustartion from '../../assets/socialmedia/login.png';
 import { authentication } from '../../firebase-config';
-import { signInWithPopup, GoogleAuthProvider, GithubAuthProvider } from 'firebase/auth';
+import { signInWithPopup, GoogleAuthProvider, GithubAuthProvider,createUserWithEmailAndPassword  } from 'firebase/auth';
+import {useUserContext} from "../../context/userContext"
 export default function Login() {
 
+    const emailRef = useRef();
+    const psdRef = useRef();
+
+    const {signInUser} = useUserContext();
 
 
     const handleGoogleLogin = () => {
@@ -30,13 +35,22 @@ export default function Login() {
         })
     }
 
+    const handleClick = (e) => {
+        e.preventDefault();
+        const email = emailRef.current.value;
+        const password = psdRef.current.value;
+        if(email && password) signInUser(email,password);
+    }
+
+    
+
     return (
         <div className="container-ctm-login container">
             <div className="illustration_img">
                 <img src={loginIllustartion} alt="bannerimg"></img>
             </div>
             <div className="login-content">
-                <form>
+                <form onSubmit={handleClick}>
                     <h2 style={{ fontSize: '27px' }} className="title">
                         Welcome
                     </h2>
@@ -51,10 +65,11 @@ export default function Login() {
                         </div>
                         <div className="div">
                             <input
-                                type="text"
-                                placeholder="Username"
+                                type="email"
+                                placeholder="Email"
                                 className="input"
                                 required
+                                ref={emailRef}
                             ></input>
                         </div>
                     </div>
@@ -69,6 +84,7 @@ export default function Login() {
                                 placeholder="Password"
                                 className="input"
                                 required
+                                ref={psdRef}
                             ></input>
                         </div>
                     </div>
@@ -77,7 +93,7 @@ export default function Login() {
                         <span style={{ color: 'red' }}>Forgot Password?</span>
                     </a>
 
-                    <div className="loginbutton">
+                    <div className="loginbutton" >
                         <input
                             type="submit"
                             className="btn"

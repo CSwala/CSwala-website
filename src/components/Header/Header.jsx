@@ -12,6 +12,8 @@ import {
   List,
   Divider,
 } from "@material-ui/core";
+import { authentication } from "../../firebase-config";
+import {signOut} from "firebase/auth";
 
 function Header(props) {
   const { currentRoute } = props;
@@ -114,6 +116,15 @@ function Header(props) {
 
   const classes = useStyles();
 
+  const handleSignOut = () => {
+    signOut(authentication).then(() => {
+      alert("Success SignOut")
+    }).catch((error) => {
+      alert(error)
+    });
+  }
+
+
   return (
     <>
       <header ref={header} className={styles.header}>
@@ -175,7 +186,9 @@ function Header(props) {
             <div className={classes.userContainer}>
               <img className={classes.userAvatar} src={props.avatar} alt="profilephoto" />
               <h4 className={classes.username} >{props.userName}</h4>
+              <button className={classes.signinbutton} onClick={handleSignOut} >Sign Out</button>
             </div>
+            
           ) : (
             <Link
                 className={styles.li}
