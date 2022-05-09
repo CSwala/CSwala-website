@@ -4,13 +4,9 @@ import {
   Grid,
   Box,
   makeStyles,
-  Typography,
-  Tooltip,
-  Fade,
+  TextField ,
   
 } from "@material-ui/core";
-import { red } from '@material-ui/core/colors';
-import { fontFamily } from '@mui/system';
 
 const useStyles = makeStyles({
   gridContainer:{
@@ -43,13 +39,16 @@ const useStyles = makeStyles({
     
 })
 
+
+
 function Jobhunt() {
   const classes = useStyles();
   const [data,setData]=useState([]);
+  const [filter, setFilter] = useState([]);
+  const [search, setNewSearch] = useState("");
 
     useEffect(() => {
-      fetch('portal.json'
-      ,{
+       fetch('portal.json',{
         headers : { 
           'Content-Type': 'application/json',
           'Accept': 'application/json'
@@ -59,12 +58,27 @@ function Jobhunt() {
         .then(res => res.json())
         .then(data => {
             setData(data)
+            setFilter(data)
             console.log(data)
         })
-    })
+    },[])
+
+
+    const handleChange = (e) => {
+      console.log(e.target.value)
+      setNewSearch(e.target.value)
+      const filtered = filter.filter((item) => item.Title.toLowerCase().includes(search.toLowerCase()))
+      setFilter(filtered)
+    }
+
 
   return (
     <div className={classes.jobhunt}>
+     <div className='form'>
+        <TextField id="outlined-search" onChange={handleChange} label="Search field" type="search" />
+     </div>
+
+
       <Box py={6} px={3}>
         <Grid container className={classes.gridContainer} rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         {
