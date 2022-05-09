@@ -82,7 +82,7 @@ function Jobhunt() {
       <Box py={6} px={3}>
         <Grid container className={classes.gridContainer} rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         {
-          data && data.length > 0 && data.map((item) => 
+          filter && filter.length > 0 && filter.map((item) => 
           <Grid className={classes.innerGrid} item xs={6} sm={3}>
             <a href={item.Link} className={classes.link}><Paper className={classes.paper}>{item.Title}</Paper></a>
           </Grid>
