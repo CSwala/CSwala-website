@@ -19,6 +19,7 @@ const Forget = lazy(() => import("./pages/ForgetPassword/Forget"));
 const Reset = lazy(() => import("./pages/ResetPassword/Reset"));
 const Report = lazy(() => import("./pages/ReportaBug/Report"));
 const Signup = lazy(() => import("./pages/SignupPage/Signup"));
+const Jobhunt = lazy(() => import("./pages/JobHunt/Jobhunt"));
 function App({ location }) {
 
   const [onUserLogin, setOnUserLogin] = useState(true);
@@ -50,6 +51,7 @@ function App({ location }) {
           <Route path="/" exact component={Home} />
           <Route path="/contact" exact component={ContactUs} />
           <Route path="/explore" exact component={Explore} />
+          <Route path="/jobhunt" exact component={Jobhunt} />
           <Route path="/e/:slug" exact component={DetailPage} />
           <Route path="/jobs" exact component={ContactUs} />
           <Route path="/feed" exact component={ContactUs} />
@@ -75,6 +77,7 @@ function App({ location }) {
           <Route path="/" exact component={Home} />
           <Route path="/contact" exact component={ContactUs} />
           <Route path="/explore" exact component={Explore} />
+          <Route path="/jobhunt" exact component={Jobhunt} />
           <Route path="/e/:slug" exact component={DetailPage} />
           <Route path="/jobs" exact component={ContactUs} />
           <Route path="/feed" exact component={ContactUs} />
