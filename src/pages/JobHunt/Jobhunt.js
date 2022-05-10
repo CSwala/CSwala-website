@@ -16,14 +16,20 @@ const useStyles = makeStyles({
       padding: 35,
     },
     paper: {
-      padding: 35,
-      textAlign: 'center',
-      color: "#fff",
-      cursor:"pointer",
-      background:"#1C1C1C",
-      "&:hover": {
-        background: "#1a1a1a",
-      },
+     padding: 35,
+    textAlign: "left",
+    color: "white",
+    background: "#1C1C1C",
+    border: "1px solid rgba(0, 0, 0, 0.2)",
+    display: "grid",
+    justifyItems: "flex-start",
+    alignItems: "center",
+    paddingLeft: 35,
+    paddingRight: 35,
+    overflow: "hidden",
+    "&:hover": {
+      background: "#1a1a1a",
+    },
   
     },
     innerGrid:{

@@ -27,10 +27,15 @@
 }
 .Button {
   margin-left: 20px;
-  background-color: #fbb03b;
-  color: black;
-  font-weight: bold;
   font-family: "Work Sans", bold;
-  width: 100px;
-  letter-spacing: -0.5px;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #1C1C1C;
+  background: #FBB03B;
 }
