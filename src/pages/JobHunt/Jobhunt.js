@@ -7,6 +7,7 @@ import {
   TextField ,
   
 } from "@material-ui/core";
+import "./Jobhunt.css"
 
 const useStyles = makeStyles({
   gridContainer:{
@@ -20,7 +21,6 @@ const useStyles = makeStyles({
     textAlign: "left",
     color: "white",
     background: "#1C1C1C",
-    border: "1px solid rgba(0, 0, 0, 0.2)",
     display: "grid",
     justifyItems: "flex-start",
     alignItems: "center",
@@ -28,7 +28,7 @@ const useStyles = makeStyles({
     paddingRight: 35,
     overflow: "hidden",
     "&:hover": {
-      background: "#1a1a1a",
+      background: "#fbb03b",
     },
   
     },
@@ -37,11 +37,20 @@ const useStyles = makeStyles({
       backgroundColor:"#1C1C1C"
     },
     jobhunt:{
-      background:"#222222",
+      background:"#1C1C1C",
+    },
+    form:{
+      width: "200px",
+      height: "100px",
     },
     link:{
       textDecoration:"none"
-    }
+    },
+  formLabel: {
+    color: "#fbb03b!important",
+    fontSize: "1rem",
+    borderColor: "#fbb03b"
+  },
     
 })
 
@@ -80,8 +89,10 @@ function Jobhunt() {
 
   return (
     <div className={classes.jobhunt}>
-     <div className='form'>
-        <TextField id="outlined-search" onChange={handleChange} label="Search field" type="search" />
+      <div className={(classes.form, classes.gridContainer)} >
+        <TextField sx={{ input: { color: '#fbb03b' } }} InputLabelProps={{
+          className: classes.formLabel
+        }}id="outlined-basic" onChange={handleChange} label="Search field" variant="outlined"/>
      </div>
 
 
