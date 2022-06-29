@@ -33,7 +33,7 @@
 **2.** Clone your new fork of the repository:
 
 ```bash
-git clone hhttps://github.com/<your-github-uername>/CSwala-website
+git clone https://github.com/<your-github-uername>/CSwala-website
 ```
 
 **3.** Set upstream command:
