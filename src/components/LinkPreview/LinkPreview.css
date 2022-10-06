@@ -1,0 +1,66 @@
+
+.LinkPreview {
+  position: relative;
+  height: 250px;
+  display: block;
+  max-width: 280px;
+  scroll-behavior: all;
+  min-width: 280px;
+  overflow: hidden;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 0.45rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.LinkPreview:hover{
+  color: #BABABA;
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+.LinkPreview img {
+  width: 280px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 0.25rem 0.25rem 0 0;
+  outline: none;
+  border: none;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  height: 105px;
+  width: 100%;
+  padding: 8px 16px;
+  border-top: 2px solid rgba(0, 0, 0, 0.12);
+}
+.info h2 {
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.info p {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.info span {
+  opacity: 0.5;
+  font-size: 12px;
+}
+@media only screen and (max-width: 576px) {
+  .LinkPreview {
+    width: 220px;
+    min-width: 220px;
+  }
+  .LinkPreview img {
+    width: 220px;
+  }
+}

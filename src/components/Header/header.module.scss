@@ -1,0 +1,304 @@
+@use './../../scss/colors';
+
+.spacer {
+  height: 90px;
+}
+
+.header {
+  background-color: colors.$backgroundLight;
+  font-family: "Work Sans", bold;
+  font-weight: 600;
+  display: flex;
+  z-index: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px 15px 30px;
+  gap: 15px;
+  font-size: 18px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  .mobileLogo {
+    display: none;
+  }
+  .list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    .pageLinks {
+      display: flex;
+      gap: 15px;
+      max-width: 100%;
+      width: 70%;
+      justify-content: space-around;
+    }
+    .hamburger {
+      display: none;
+    }
+    .activeLi,
+    .li {
+      cursor: pointer;
+      height: 37px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: colors.$textmuted;
+      &::after {
+        position: absolute;
+        bottom: 7px;
+        left: 0;
+        content: "";
+        display: block;
+        width: 0;
+        opacity: 0;
+        transition: all 300ms cubic-bezier(0.9, 0, 0.33, 1);
+        height: 2px;
+        border-radius: 5px;
+        background-color: colors.$primary;
+      }
+      &:hover {
+        font-size: 18px;
+        &::after {
+          left: 0%;
+          opacity: 1;
+          width: 9px;
+          transition: all 300ms cubic-bezier(0.9, 0, 0.33, 1), opacity 0ms;
+          bottom: 7px;
+        }
+      }
+    }
+    .activeLi {
+      color: colors.$primary;
+      &::after {
+        left: 0%;
+        width: 9px;
+        opacity: 1;
+      }
+    }
+    .li {
+      text-decoration: none;
+      .logo {
+        width: 50px;
+      }
+      &:hover {
+        color: colors.$primary;
+      }
+    }
+  }
+  .left {
+    justify-content: space-around;
+    width: 70%;
+    max-width: 540px;
+    .home {
+      height: 60px;
+      &::after {
+        display: none;
+      }
+      &:hover {
+        transform: scale(1.1);
+      }
+      &.activeLi {
+        transform: scale(1.2);
+      }
+    }
+  }
+  .right {
+    margin-left: auto;
+    margin-right: 20px;
+    background: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    .li {
+      border: 2px colors.$white solid;
+      color: colors.$white;
+      padding: 10px 15px;
+      border-radius: 100px;
+      min-width: 95px;
+      transform: translateX(-10px);
+      &::after {
+        display: none;
+      }
+      &:hover {
+        color: colors.$backgroundLight;
+        background: colors.$white;
+      }
+    }
+
+    .menu {
+      cursor: pointer;
+      height: 30px;
+      position: relative;
+      .dropDown {
+        z-index: 2;
+        position: absolute;
+        top: 36px;
+        right: 0;
+        visibility: hidden;
+        opacity: 0;
+        .pointer {
+          z-index: -1;
+          display: block;
+          height: 10px;
+          width: 10px;
+          position: absolute;
+          top: -5px;
+          right: 12px;
+          background-color: colors.$medium-dark-grey;
+          transform: rotate(45deg);
+          border-radius: 3px;
+          box-shadow: 0 0 2px black;
+        }
+      }
+      &:hover {
+        .dropDown {
+          visibility: visible;
+          opacity: 1;
+          transition: height 0.3s cubic-bezier(0.9, 0, 0.33, 1);
+        }
+      }
+    }
+  }
+}
+
+.hamburger{
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .header {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    z-index: 999;
+    align-items: flex-start;
+    padding-top: 25px;
+    transition: all 0.7s cubic-bezier(0.9, 0.9, 0.33, 1);
+    .mobileLogo {
+      display: block;
+      position: fixed;
+      top: 20px;
+      transform: translateX(-50%);
+      left: 50%;
+      z-index: 2;
+      &:hover {
+        transform: scale(1.1) translateX(-45%);
+      }
+      .logo {
+        width: 50px;
+      }
+    }
+    .hamburger {
+      width: 30px;
+      height: 40px;
+      display: block;
+      cursor: pointer;
+      transition: all 0.1s cubic-bezier(0.9, 0.9, 0.33, 1);
+      box-sizing: content-box;
+      border-radius: 0 0 50px 0;
+      position: fixed;
+      top: 24px;
+      left: 37px;
+      z-index: 4;
+      .bar {
+        height: 3px;
+        background: colors.$white;
+        display: block;
+        position: absolute;
+        transform: rotate(0);
+        transition: all 1.5s cubic-bezier(0.9, 0, 0.33, 1);
+      }
+      .topBar {
+        width: 30px;
+        top: 30%;
+      }
+      .middleBar {
+        width: 30px;
+        top: 50%;
+      }
+      .bottomBar {
+        width: 22px;
+        top: 70%;
+        left: 0;
+      }
+    }
+
+    .left {
+      align-self: center;
+      flex-direction: column;
+      margin-bottom: 8rem;
+      width: 82%;
+      transform: translateX(-40px);
+      .homeContainer {
+        .home {
+          transform: scale(1.1);
+          &:hover {
+            transform: scale(1.4);
+          }
+        }
+      }
+      .pageLinks {
+        display: grid;
+        margin-left: 115px;
+        opacity: 0;
+        .li {
+          justify-content: flex-start;
+          font-size: 2rem;
+          &::after {
+            bottom: 0px;
+          }
+          &:hover::after {
+            left: 2px;
+            width: 18px;
+            bottom: 0px;
+          }
+        }
+      }
+      .activeLi {
+        &::after {
+          left: 2px;
+          width: 18px;
+        }
+      }
+    }
+    .right {
+      position: absolute;
+      top: 24px;
+      right: 10px;
+    }
+  }
+  .headerOpen {
+    height: 100vh;
+    transition: all 0.7s cubic-bezier(0.9, 0.9, 0.33, 1);
+    .mobileLogo {
+      transform: translate(-50%, -500px);
+    }
+    .hamburger {
+      width: 30px;
+      height: 40px;
+      transition: all 0.1s cubic-bezier(0.9, 0.9, 0.33, 1);
+      .bar {
+        top: 50%;
+        width: 30px;
+      }
+      .topBar {
+        transform: rotate(405deg);
+      }
+      .middleBar {
+        transform: rotateY(-90deg);
+      }
+      .bottomBar {
+        transform: rotate(135deg);
+      }
+    }
+    .left {
+      .pageLinks {
+        opacity: 1;
+      }
+    }
+  }
+}

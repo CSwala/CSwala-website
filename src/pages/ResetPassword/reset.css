@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container-ctm-reset {
+  min-height: 900px;
+  margin: 40px auto !important;
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #ffffff;
+  align-items: center;
+  grid-gap: 5rem;
+  border-radius: 20px;
+  box-shadow: 1px 1px 28px 1px rgba(179, 179, 179, 0.36);
+  -webkit-box-shadow: 1px 1px 28px 1px rgba(179, 179, 179, 0.36);
+  -moz-box-shadow: 1px 1px 28px 1px rgba(179, 179, 179, 0.36);
+}
+
+.div ::placeholder {
+  font-size: 14px;
+}
+
+.reset-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+form {
+  width: 25vw;
+}
+
+.reset-content .input-div {
+  position: relative;
+  display: grid;
+  grid-template-columns: 7% 93%;
+  margin: 5px 0;
+  padding: 10px 0;
+  /* border-top: 2px solid #d9d9d9; */
+}
+
+.input-div > div > input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 1.2rem 1.5rem;
+  font-size: 1rem;
+  color: #555;
+  font-family: "poppins", sans-serif;
+  border-bottom: 2px solid #d9d9d9;
+}
+i {
+  margin-right: 1rem;
+}
+.title {
+  line-height: 9rem;
+}
+
+.submitbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.btn {
+  display: block;
+  width: 100%;
+  height: 45px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.877);
+  background-size: 200%;
+  font-size: 1rem;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin: 2rem 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn:hover {
+  background-position: right;
+  color: orange;
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    width: 80vw;
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90vw;
+    height: 90vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  form {
+    width: 300px;
+  }
+  .container {
+    margin-left: 5rem;
+    width: 80vw;
+    height: 80vh;
+    display: inline;
+  }
+
+  .illustration_img img {
+    display: none;
+  }
+
+  .reset-content {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,11 @@
+@use "./../../scss/colors";
+
+.root {
+  flex-grow: 1;
+  background: colors.$backgroundDark;
+  font-family: "Work Sans", bold;;
+}
+
+a {
+  text-decoration: none;
+}

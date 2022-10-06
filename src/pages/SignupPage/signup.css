@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-ctm-signup {
+    min-height: 640px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ffffff;
+    align-items: center;
+    grid-gap: 10rem;
+}
+.illustration_img img {
+    width: 30vw;
+    height: 100%;
+    margin-right: 20px;
+}
+.div ::placeholder {
+    font-size: 14px;
+}
+
+.signup-content {
+    width: 400px;
+    padding: 30px 50px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 28px 1px rgba(179, 179, 179, 0.36);
+    -webkit-box-shadow: 1px 1px 28px 1px rgba(179, 179, 179, 0.36);
+    -moz-box-shadow: 1px 1px 28px 1px rgba(179, 179, 179, 0.36);
+}
+
+.signup-content h2 {
+    margin: 15px 0;
+    font-weight: bold !important;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 2.9rem;
+}
+
+.signup-content .input-div {
+    position: relative;
+    display: flex;
+    margin: 5px 0;
+    padding: 3px 0;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.signup-content .input-div.one {
+    margin-top: 0;
+}
+
+.i {
+    color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.i i {
+    transition: 0.3s;
+}
+
+.input-div > div {
+    height: 45px;
+}
+
+.input-div > .input-div > div > h5 {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.input-div:before,
+.input-div:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #38d39f;
+    transition: 0.4s;
+}
+
+.input-div:before {
+    right: 50%;
+}
+
+.input-div:after {
+    left: 50%;
+}
+
+.input-div.focus:before,
+.input-div.focus:after {
+    width: 50%;
+}
+
+.input-div.focus > div > h5 {
+    top: -5px;
+    font-size: 15px;
+}
+
+.input-div.focus > .i > i {
+    color: #38d39f;
+}
+
+.input-div > div > input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    margin: 0 1.5rem;
+    font-size: 1.2rem;
+    color: #555;
+    font-family: 'Work Sans', bold;
+}
+
+.input-div.pass {
+    margin-bottom: 4px;
+}
+
+a {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #999;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+#alternativesignup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#facebookIcon {
+    background-image: url('../../assets/socialmedia/search.png');
+    background-repeat: no-repeat;
+    width: 5rem;
+    height: 3rem;
+}
+
+#twitterIcon {
+    background-image: url('../../assets/socialmedia/github.png');
+    background-repeat: no-repeat;
+    width: 3rem;
+    height: 3rem;
+}
+a:hover {
+    color: #fcc616;
+}
+.logoinbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.btn {
+    display: block;
+    width: 100%;
+    height: 45px;
+
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.877);
+    background-size: 200%;
+    font-size: 1rem;
+    color: #fff;
+    font-family: 'Work Sans', bold;
+    text-transform: uppercase;
+    margin: 2rem 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn:hover {
+    background-position: right;
+    color: orange;
+}
+@media screen and (max-width: 1200px) {
+    .container {
+        padding: 0 2rem;
+    }
+    .signup-content {
+        width: 380px;
+        padding: 30px 50px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .signup-content {
+        width: 450px;
+        padding: 30px 50px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .illustration_img img {
+        display: none;
+    }
+
+    .container-ctm-signup {
+        grid-gap: 0rem;
+    }
+
+    .signup-content {
+        width: 400px;
+        padding: 30px 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .illustration_img img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .illustration_img img {
+        display: none;
+    }
+    .container-ctm-signup {
+        min-height: 600px;
+    }
+
+    .signup-content {
+        width: 400px;
+        padding: 30px 10px;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: none;
+    }
+}

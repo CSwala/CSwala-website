@@ -1,0 +1,43 @@
+@use "./../../scss/colors";
+
+@import "https://fonts.googleapis.com/css?family=Amatic+SC:400,700";
+
+.root {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 100px;
+  color: colors.$prussian-blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 0px;
+}
+
+.upperheading {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+.lowerheading {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  width: 600px;
+  text-align: center;
+}
+
+.returnHome {
+  font-family: "Work Sans", bold;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 1rem 0 2rem 0;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #1c1c1c;
+  background: #fbb03b;
+}
