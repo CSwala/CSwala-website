@@ -9,35 +9,42 @@ import {
 } from "@material-ui/core";
 import "./Jobhunt.css"
 
-const useStyles = makeStyles({
-  gridContainer:{
-      display:"flex",
+
+
+
+
+const useStyles = makeStyles((theme) => ({
+    gridContainer:{
+      display:"gridContainer",
+      background:"#222222",
       justifyContent:"center",
       alignItems:"center",
-      padding: 35,
+      padding: 10,
     },
-    paper: {
-     padding: 35,
+  paper: {
+    padding: theme.spacing(3),
     textAlign: "left",
     color: "white",
     background: "#1C1C1C",
-    display: "grid",
+    border: "1px solid rgba(0, 0, 0, 0.3)",
+    display: "grid ,",
     justifyItems: "flex-start",
     alignItems: "center",
     paddingLeft: 35,
     paddingRight: 35,
     overflow: "hidden",
     "&:hover": {
-      background: "#fbb03b",
+      background: "#1a1a1a",
     },
-  
-    },
-    innerGrid:{
-      margin:12,
+  },
+
+
+  innerGrid:{
+      margin:8,
       backgroundColor:"#1C1C1C"
     },
     jobhunt:{
-      background:"#1C1C1C",
+      background:"#222222",
     },
     form:{
       width: "200px",
@@ -47,12 +54,21 @@ const useStyles = makeStyles({
       textDecoration:"none"
     },
   formLabel: {
-    color: "#fbb03b!important",
+
+    color: "grey !important",
     fontSize: "1rem",
-    borderColor: "#fbb03b"
+    borderColor: "white",
+    lineHeight: 0,
+    fontFamily: '"Work Sans", bold',
+      
+    boxOrient: "vertical",
+    textOverflow: "ellipsis",
+   
+    wordBreak: "break-all",
   },
-    
-})
+
+
+}));
 
 
 
@@ -84,23 +100,24 @@ function Jobhunt() {
       setNewSearch(e.target.value)
       const filtered = filter.filter((item) => item.Title.toLowerCase().includes(search.toLowerCase()))
       setFilter(filtered)
+
     }
 
 
   return (
     <div className={classes.jobhunt}>
-      <div className={(classes.form, classes.gridContainer)} >
-        <TextField sx={{ input: { color: '#fbb03b' } }} InputLabelProps={{
-          className: classes.formLabel
-        }}id="outlined-basic" onChange={handleChange} label="Search field" variant="outlined"/>
+      <div className={(classes.form, classes.gridContainer)}>
+        <TextField sx={{ input: { color: 'grey' } }} 
+        InputLabelProps={{className: classes.formLabel}}
+        id="outlined-basic" onChange={handleChange} label="Search.." variant="outlined"/>/>
      </div>
 
 
-      <Box py={6} px={3}>
-        <Grid container className={classes.gridContainer} rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+      <Box py={6} px={6}>
+        <Grid container className={classes.gridContainer} rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3}}>
         {
           filter && filter.length > 0 && filter.map((item) => 
-          <Grid className={classes.innerGrid} item xs={6} sm={3}>
+          <Grid className={classes.innerGrid} item xs={2} sm={2}>
             <a href={item.Link} className={classes.link}><Paper className={classes.paper}>{item.Title}</Paper></a>
           </Grid>
           
