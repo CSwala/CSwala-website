@@ -1140,14 +1140,6 @@
  "Link" : "https://www.inmobi.com/company/careers/"
 },
 {
- "Title" : "InMobi",
- "Link" : "https://www.inmobi.com/company/careers/"
-},
-{
- "Title" : "Innovaccer",
- "Link" : "https://innovaccer.com/careers/"
-},
-{
  "Title" : "Innovaccer",
  "Link" : "https://innovaccer.com/careers/"
 },
@@ -1162,10 +1154,6 @@
 {
  "Title" : "Intellika",
  "Link" : "https://www.intellika.in/careers/"
-},
-{
- "Title" : "Intuit",
- "Link" : "https://www.intuit.com/careers/"
 },
 {
  "Title" : "Intuit",
@@ -1228,14 +1216,6 @@
  "Link" : "https://careers.jpmorgan.com/IN/en/home"
 },
 {
- "Title" : "JP Morgan",
- "Link" : "https://careers.jpmorgan.com/us/en/home"
-},
-{
- "Title" : "Jumbotail",
- "Link" : "https://jumbotail.com/careers/"
-},
-{
  "Title" : "Jumbotail",
  "Link" : "https://jumbotail.com/careers/"
 },
@@ -1248,20 +1228,12 @@
  "Link" : "https://www.juniper.net/us/en/company/careers/"
 },
 {
- "Title" : "Juniper networks",
- "Link" : "https://www.juniper.net/us/en/company/culture-careers.html"
-},
-{
  "Title" : "Jupiter money",
  "Link" : "https://jobs.lever.co/jupiter"
 },
 {
  "Title" : "Juspay",
  "Link" : "https://www.juspay.in/careers"
-},
-{
- "Title" : "Juspay",
- "Link" : "https://www.juspay.in/careers/"
 },
 {
  "Title" : "Kaleyra",
@@ -1284,7 +1256,7 @@
  "Link" : "https://khatabook.com/hiring"
 },
 {
- "Title" : "khoros",
+ "Title" : "Khoros",
  "Link" : "https://khoros.com/about/careers"
 },
 {
@@ -1376,10 +1348,6 @@
  "Link" : "https://careers.makemytrip.com/"
 },
 {
- "Title" : "MakeMyTrip",
- "Link" : "https://careers.makemytrip.com/"
-},
-{
  "Title" : "Mantech International",
  "Link" : "https://www.mantech.com/careers"
 },
@@ -1394,14 +1362,6 @@
 {
  "Title" : "Master Class",
  "Link" : "https://careers.masterclass.com"
-},
-{
- "Title" : "Mastercard",
- "Link" : "https://www.mastercard.us/en-us/vision/who-we-are/careers.html"
-},
-{
- "Title" : "Mathworks",
- "Link" : "https://in.mathworks.com/company/jobs/opportunities.html"
 },
 {
  "Title" : "Mathworks",
@@ -1717,10 +1677,6 @@
 },
 {
  "Title" : "Paypal",
- "Link" : "https://www.paypal.com/in/webapps/mpp/jobs"
-},
-{
- "Title" : "Paypal",
  "Link" : "https://www.paypal.com/us/webapps/mpp/jobs/students-and-grads/internships"
 },
 {
@@ -1736,20 +1692,12 @@
  "Link" : "https://payu.in/careers"
 },
 {
- "Title" : "PayU",
- "Link" : "https://payu.in/careers"
-},
-{
  "Title" : "Pegasystems",
  "Link" : "https://www.pega.com/about/careers"
 },
 {
  "Title" : "PeopleStrong",
  "Link" : "https://www.peoplestrong.com/careers/"
-},
-{
- "Title" : "persistent systems",
- "Link" : "https://www.persistent.com/careers/"
 },
 {
  "Title" : "Persistent",
@@ -1760,23 +1708,11 @@
  "Link" : "https://pharmeasy.in/careers/"
 },
 {
- "Title" : "PharmEasy",
- "Link" : "https://pharmeasy.in/careers/"
-},
-{
  "Title" : "Philips",
  "Link" : "https://www.careers.philips.com/global/en"
 },
 {
- "Title" : "Phillips",
- "Link" : "https://www.careers.philips.com/professional/in/en"
-},
-{
  "Title" : "Phonepe",
- "Link" : "https://www.phonepe.com/careers/"
-},
-{
- "Title" : "PhonePe",
  "Link" : "https://www.phonepe.com/careers/"
 },
 {
@@ -1789,19 +1725,11 @@
 },
 {
  "Title" : "Playment",
- "Link" : "https://playment.io/careers"
-},
-{
- "Title" : "Playment",
  "Link" : "https://www.playment.io/careers"
 },
 {
  "Title" : "Plintron",
  "Link" : "https://www.plintron.com/en/career"
-},
-{
- "Title" : "postman",
- "Link" : "https://www.postman.com/company/careers/"
 },
 {
  "Title" : "Postman",
@@ -1816,7 +1744,7 @@
  "Link" : "https://practo.app.param.ai/jobs/"
 },
 {
- "Title" : "priceline",
+ "Title" : "Priceline",
  "Link" : "https://careers.priceline.com/search"
 },
 {
@@ -1868,10 +1796,6 @@
  "Link" : "https://www.qualcomm.com/company/careers"
 },
 {
- "Title" : "Qualcomm",
- "Link" : "https://www.qualcomm.com/company/careers"
-},
-{
  "Title" : "Quikr",
  "Link" : "https://www.quikr.com/html/jobs.php"
 },
@@ -1890,14 +1814,6 @@
 {
  "Title" : "Razorpay",
  "Link" : "https://razorpay.com/jobs/"
-},
-{
- "Title" : "Razorpay",
- "Link" : "https://razorpay.com/jobs/"
-},
-{
- "Title" : "Red hat",
- "Link" : "https://www.redhat.com/en/jobs"
 },
 {
  "Title" : "RedHat",
@@ -1928,10 +1844,6 @@
  "Link" : "https://www.rivigo.com/careers/"
 },
 {
- "Title" : "Rivigo",
- "Link" : "https://www.rivigo.com/careers/"
-},
-{
  "Title" : "Rocket Companies",
  "Link" : "https://www.myrocketcareer.com/"
 },
@@ -1942,10 +1854,6 @@
 {
  "Title" : "Rubrik",
  "Link" : "https://www.rubrik.com/company/careers"
-},
-{
- "Title" : "Rubrik",
- "Link" : "https://www.rubrik.com/en/company/careers"
 },
 {
  "Title" : "Rupeek",
@@ -1965,31 +1873,15 @@
 },
 {
  "Title" : "Salesforce",
- "Link" : "https://www.salesforce.com/"
-},
-{
- "Title" : "Salesforce",
  "Link" : "https://www.salesforce.com/company/careers/"
-},
-{
- "Title" : "Salesforce",
- "Link" : "https://www.salesforce.com/in/company/careers/rdr/"
 },
 {
  "Title" : "Samsung",
  "Link" : "https://www.samsung.com/in/about-us/careers/"
 },
 {
- "Title" : "Samsung",
- "Link" : "https://www.samsung.com/in/aboutsamsung/careers/careers-center/"
-},
-{
  "Title" : "SAP",
  "Link" : "https://jobs.sap.com/"
-},
-{
- "Title" : "SAP",
- "Link" : "https://www.sap.com/india/about/careers.html"
 },
 {
  "Title" : "Sapphire Solutions",
@@ -2032,20 +1924,8 @@
  "Link" : "https://careers.shaadi.com/"
 },
 {
- "Title" : "Shaadi.com",
- "Link" : "https://www.naukri.com/"
-},
-{
  "Title" : "ShareChat",
  "Link" : "https://sharechat.com/careers"
-},
-{
- "Title" : "ShareChat",
- "Link" : "https://we.sharechat.com/careers"
-},
-{
- "Title" : "Shell",
- "Link" : "https://www.shell.com/careers.html"
 },
 {
  "Title" : "Shell",
@@ -2066,10 +1946,6 @@
 {
  "Title" : "Siemens Healthineers",
  "Link" : "https://www.siemens-healthineers.com/en-in/careers"
-},
-{
- "Title" : "Siemens",
- "Link" : "https://new.siemens.com/global/en/company/jobs/our-locations/india.html"
 },
 {
  "Title" : "Siemens",
@@ -2160,14 +2036,6 @@
  "Link" : "https://www.sprinklr.com/careers"
 },
 {
- "Title" : "Sprinklr",
- "Link" : "https://www.sprinklr.com/careers/"
-},
-{
- "Title" : "Squadstack",
- "Link" : "https://www.squadstack.com/careers/"
-},
-{
  "Title" : "SquadStack",
  "Link" : "https://www.squadstack.com/careers/"
 },
@@ -2200,10 +2068,6 @@
  "Link" : "https://careers.swiggy.com/"
 },
 {
- "Title" : "Swiggy",
- "Link" : "https://careers.swiggy.com/#/"
-},
-{
  "Title" : "Syberry",
  "Link" : "https://www.syberry.com/company/our-team"
 },
@@ -2214,10 +2078,6 @@
 {
  "Title" : "Symphoni HR Private Limited",
  "Link" : "https://symphonihr.com"
-},
-{
- "Title" : "Synopsys",
- "Link" : "https://www.synopsys.com/careers.html"
 },
 {
  "Title" : "Synopsys",
@@ -2264,20 +2124,8 @@
  "Link" : "https://careers.te.com/"
 },
 {
- "Title" : "Techment",
- "Link" : "https://www.techment.com/software-companies-in-chhattisgarh/"
-},
-{
- "Title" : "Techment",
- "Link" : "https://www.techment.com/software-companies-in-chhattisgarh/"
-},
-{
  "Title" : "TEK Systems",
  "Link" : "https://www.teksystems.com/en-in/careers"
-},
-{
- "Title" : "Tekion corp",
- "Link" : "https://tekion.com/careers"
 },
 {
  "Title" : "Tekion",
@@ -2296,10 +2144,6 @@
  "Link" : "https://www.tesla.com/about"
 },
 {
- "Title" : "Tesla",
- "Link" : "https://www.tesla.com/careers"
-},
-{
  "Title" : "texas instruments",
  "Link" : "https://careers.ti.com/"
 },
@@ -2312,12 +2156,8 @@
  "Link" : "https://www.thoughtspot.com/careers-listing"
 },
 {
- "Title" : "thoughtWorks",
- "Link" : "https://www.thoughtworks.com/careers/jobs"
-},
-{
  "Title" : "ThoughtWorks",
- "Link" : "https://www.thoughtworks.com/careers/us"
+ "Link" : "https://www.thoughtworks.com/careers/jobs"
 },
 {
  "Title" : "Times Internet",
@@ -2334,10 +2174,6 @@
 {
  "Title" : "Toptal",
  "Link" : "https://www.toptal.com/careers"
-},
-{
- "Title" : "tower research capital",
- "Link" : "https://www.tower-research.com/positions"
 },
 {
  "Title" : "Tower Research",
@@ -2360,10 +2196,6 @@
  "Link" : "https://www.trigyn.com/job/etl-developer-data-engineer"
 },
 {
- "Title" : "turvo",
- "Link" : "https://turvo.com/careers/"
-},
-{
  "Title" : "Turvo",
  "Link" : "https://turvo.com/careers/"
 },
@@ -2372,20 +2204,8 @@
  "Link" : "https://www.twilio.com/company/jobs"
 },
 {
- "Title" : "Twilio",
- "Link" : "https://www.twilio.com/company/jobs"
-},
-{
  "Title" : "Twitter",
  "Link" : "https://careers.twitter.com/"
-},
-{
- "Title" : "Twitter",
- "Link" : "https://careers.twitter.com/"
-},
-{
- "Title" : "Uber",
- "Link" : "https://www.uber.com/us/en/careers/"
 },
 {
  "Title" : "Uber",
@@ -2400,28 +2220,16 @@
  "Link" : "https://www.ubisoft.com/en-us/company/careers"
 },
 {
- "Title" : "Ubisoft",
- "Link" : "https://www.ubisoft.com/en-us/company/careers/working-at-ubisoft"
-},
-{
  "Title" : "Udaan",
  "Link" : "https://careers.udaan.com/"
-},
-{
- "Title" : "Udaan",
- "Link" : "https://careers.udaan.com/#!/"
 },
 {
  "Title" : "Ultimate software",
  "Link" : "https://www.ukg.com/careers"
 },
 {
- "Title" : "unacadamy",
+ "Title" : "Unacadamy",
  "Link" : "https://unacademy.com/careers"
-},
-{
- "Title" : "Unacademy",
- "Link" : "https://apply.workable.com/unacademy/"
 },
 {
  "Title" : "Unicommerce",
@@ -2450,10 +2258,6 @@
 {
  "Title" : "Urban company",
  "Link" : "https://careers.urbancompany.com/ "
-},
-{
- "Title" : "Urban Company",
- "Link" : "https://careers.urbancompany.com/"
 },
 {
  "Title" : "Urban Ladder",
@@ -2488,20 +2292,8 @@
  "Link" : "https://www.visa.co.in/careers.html"
 },
 {
- "Title" : "Visa",
- "Link" : "https://www.visa.co.in/careers.html"
-},
-{
- "Title" : "Vmware",
- "Link" : "https://careers.vmware.com/main/"
-},
-{
  "Title" : "VMware",
  "Link" : "https://careers.vmware.com/main/"
-},
-{
- "Title" : "Vogo",
- "Link" : "https://vogo.in/careers/"
 },
 {
  "Title" : "Vogo",
@@ -2518,10 +2310,6 @@
 {
  "Title" : "Walmart",
  "Link" : "https://careers.walmart.com/"
-},
-{
- "Title" : "Walmart",
- "Link" : "https://careers.walmart.com/technology"
 },
 {
  "Title" : "Warner Bros.",
@@ -2544,10 +2332,6 @@
  "Link" : "https://jobs.westerndigital.com/"
 },
 {
- "Title" : "Western Digital",
- "Link" : "https://jobs.westerndigital.com/"
-},
-{
  "Title" : "Whatfix",
  "Link" : "https://whatfix.com/careers/"
 },
@@ -2564,15 +2348,11 @@
  "Link" : "https://wooqer.com/careers/"
 },
 {
- "Title" : "World Quant",
- "Link" : "https://www.weareworldquant.com/en/careers/"
-},
-{
  "Title" : "World Wide Technology",
  "Link" : "https://www.wwt.com/about/careers"
 },
 {
- "Title" : "worldQuant",
+ "Title" : "WorldQuant",
  "Link" : "https://www.worldquant.com/careers/"
 },
 {
@@ -2660,6 +2440,7 @@
  "Link" : "https://jobs.zs.com/all/jobs"
 },
 {
- "Title" : "Zynga",	"Link" : "https://www.zynga.com/jobs/careers/"
+ "Title" : "Zynga", 
+ "Link" : "https://www.zynga.com/jobs/careers/"
 }
 ]
